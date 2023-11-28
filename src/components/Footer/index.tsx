@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
           <div className="line"></div>
           <div className="content">
             <p>hello@aadu.agency</p>
-            <h5>6/170 , THOTIYANKADU 639136 IN</h5>
+            <h5>6/170 , THOTIYANKADU 639136</h5>
 
             <div className="icon">
               <img src={One} alt="" />
