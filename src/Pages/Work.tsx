@@ -19,10 +19,16 @@ const Portfolio = () => {
       }
     };
 
+    const handleScroll = () => {
+      setIsArrow(!isArrow);
+    };
+
     window.addEventListener("keydown", handleKeyDown);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 

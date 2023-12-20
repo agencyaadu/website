@@ -37,7 +37,7 @@ html {
 
 section {
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* scroll-snap-align: start; */
 }
 
