@@ -101,24 +101,27 @@
                 }
             }
             .summary {
+                opacity: 0.8;
                 color: var(--black-color);
-                font-family: Walkway-Bold;
-                letter-spacing: 0.05rem;
+                font-family: 'Open Sans', sans-serif;
+                // letter-spacing: 0.05rem;
                 font-size: 0.75rem;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
-            }
-            .info {
+              }
+              .info {
                 margin-top: 0.75rem;
                 display: flex;
                 flex-direction: row;
                 gap: 1.25rem;
                 p {
+                    opacity: 0.8;
                     color: var(--black-color);
-                    font-family: Walkway-Bold;
+                    // font-family: Walkway-Bold;
+                    font-family: 'Open Sans', sans-serif;
                     font-size: 0.7rem;
-                    letter-spacing: 0.03rem;
+                    // letter-spacing: 0.03rem;
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
