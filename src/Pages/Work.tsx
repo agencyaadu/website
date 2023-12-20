@@ -1,14 +1,13 @@
-import React, {useState, useEffect} from "react";
-import { motion } from "framer-motion";
-import Hero from "../components/Hero";
-import Response from "../components/Response";
-import { useMediaQuery } from "usehooks-ts";
-import Connect from "../components/Connect";
-import Footer from "../components/Footer";
-// import Up from "../../assets/images/Vector.svg";
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { useMediaQuery } from '@uidotdev/usehooks';
+import Footer from '../components/Footer';
+import Connect from '../components/Connect';
+import Response from '../components/Response';
+import Work from '../components/work';
 
-const Home = () => {
-  const [isArrow, setIsArrow] = useState(false);
+const Portfolio = () => {
+    const [isArrow, setIsArrow] = useState(false);
   const isTab = useMediaQuery("(max-width:768px)");
 
   useEffect(() => {
@@ -29,7 +28,7 @@ const Home = () => {
 
   return (
     <div>
-      {!isTab ? (
+        {!isTab ? (
         <>
           <section>
             <motion.div
@@ -40,7 +39,7 @@ const Home = () => {
               transition={{ duration: 0.5, ease: "easeInOut" }}
             >
               <div className="app">
-                <Hero />
+                <Work />
               </div>
               <div className="footerish" onClick={() => setIsArrow(true)}>
                 <Footer />
@@ -57,7 +56,7 @@ const Home = () => {
         <Response />
       )}
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Portfolio;

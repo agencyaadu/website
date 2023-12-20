@@ -1,0 +1,16 @@
+.tooltip-wrapper {
+    position: relative;
+    display: inline-block;
+    .tooltip {
+        position: absolute;
+        top: calc(-110% - 24px);
+        transform: translateX(20%);
+        background-color: transparent;
+        color: var(--GoatHoof, #461F09);
+        border: 0.9px solid rgba(111, 109, 109, 0.3);
+        padding: 8px 10px;
+        border-radius: 5px;
+        z-index: 1;
+        font-size: 0.75rem;
+    }
+}

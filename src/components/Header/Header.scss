@@ -1,13 +1,16 @@
 .header-wrapper {
+  top: 0;
   display: flex;
   justify-content: space-between;
   padding: 0;
   color: #d9d9d9;
   letter-spacing: 2px;
   .logo {
-    .logo1 {
-      width: 100px;
-    }
+    // .logo1 {
+    //   width: 88px;
+    //   opacity: 1;
+    //   transition: opacity 200ms ease-in;
+    // }
   }
   .navbar-content {
     display: flex;
@@ -15,6 +18,10 @@
     gap: 28px;
     p {
       cursor: pointer;
+      font-size: 0.9rem;
+    }
+    .moon {
+      width: 17px;
     }
   }
 }

@@ -1,0 +1,32 @@
+.Logo-wrapper {
+    opacity: 1;
+    color: #461f09;
+    overflow: hidden;
+    font-family: "DMSerifDisplay-Regular";
+    transition: opacity 0.7s ease-out;
+    .boththewords {
+        display: flex;
+        gap: 0;
+        align-items: baseline;
+        overflow: hidden;
+        .greyish {
+            font-family: "DMSerifDisplay-Regular";
+            font-size: 26px;
+            letter-spacing: 0;
+        }
+        .goat-us {
+            font-family: "DMSerifDisplay-Regular";
+            color: #461f09;
+            font-size: 32px;
+            letter-spacing: 0;
+        }
+    }
+    // &:hover {
+    //     opacity: 1;
+    //     .boththewords{
+    //         .greyish {
+    //             color: #3c3c3c;
+    //         }
+    //     }
+    // }
+}

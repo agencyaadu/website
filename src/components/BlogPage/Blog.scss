@@ -1,0 +1,138 @@
+.BlogPage-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .logo {
+        opacity: 0.5;
+        position: relative;
+        transition: opacity 0.3s ease-in-out ;
+        a {
+          text-decoration: none;
+          background: transparent;
+          width: max-content;
+          transition: opacity 0.3s ease-in-out;
+          .logo1 {
+            background: transparent;
+            list-style: none;
+            position: relative;
+            transition: all 1.2s ease-in;
+            margin-left: 2rem;
+            width: max-content;
+            overflow: hidden;
+            position: relative;
+          }
+        }
+        &:hover {
+          opacity: 1;
+        }
+    }
+    .navbar-content {
+        padding-right: 16px;
+        .about-nav {
+          display: none;
+        }
+        .moon-nav {
+          display: none;
+        }
+        .nav {
+          &.active {
+            p {
+              color: black;
+            }
+          }
+          &:hover {
+            color: black;
+          }
+          a {
+            color: #d9d9d9;
+            text-decoration: none;
+            &:hover {
+              color: black;
+            }
+          }
+        }
+      }
+    .BlogPost {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16/9;
+        // background: #d9d9d9;
+        border-radius: 5px;
+        border: 1px solid #5835214d;
+        overflow-y: auto;
+        // max-width: 25rem;
+        padding: 24px 32px;
+        // margin: 0 auto;
+        margin-top: 16px;
+        -ms-overflow-style: none; //IE AND EDGE
+        scrollbar-width: none;  //FIREFOX
+        .post {
+            margin-bottom: 5rem;
+            cursor: default;
+            .link {
+                text-decoration: none;
+                .title {
+                    margin-bottom: 0.7rem;
+                    cursor: pointer;
+                    h3 {
+                        opacity: 0.5;
+                        color: var(--blogpageHeading-goathoof-color);
+                        font-family: DMSerifDisplay-Regular;
+                        font-size: 1.85rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        text-transform: capitalize;
+                        text-decoration: none;
+                        transition: 1.2s ease;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 1; /* number of lines to show */
+                                line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                        transition: opacity 0.4s ease-in-out;
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            .summary {
+                color: var(--black-color);
+                font-family: Walkway-Bold;
+                letter-spacing: 0.05rem;
+                font-size: 0.75rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            .info {
+                margin-top: 0.75rem;
+                display: flex;
+                flex-direction: row;
+                gap: 1.25rem;
+                p {
+                    color: var(--black-color);
+                    font-family: Walkway-Bold;
+                    font-size: 0.7rem;
+                    letter-spacing: 0.03rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    // &:hover {
+                    //     text-decoration: underline;
+                    // }
+                    .info-icon {
+                        transform: translateY(1px);
+                    }
+                }
+            }
+        }
+        &::-webkit-scrollbar {
+          display: none;  //CHROME, SAFARI, OPERA
+        }
+    }
+}

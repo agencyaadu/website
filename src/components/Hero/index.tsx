@@ -6,6 +6,7 @@ import { useState } from "react";
 import "../Header/Header.scss";
 import { Link } from "react-router-dom";
 import Logohover from "../../assets/icons/Logohover.svg";
+import Logo from "../Logo";
 import Loading from "../Loading";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -15,6 +16,7 @@ import The from "../../assets/images/the.svg";
 import Way from "../../assets/images/way.svg";
 import Game from "../../assets/images/game.mp4";
 import { motion } from "framer-motion";
+import BlogPage from "../BlogPage";
 
 const settings = {
   dots: false,
@@ -30,6 +32,22 @@ const settings = {
 };
 
 const Hero: React.FC = () => {
+
+  // ================= DARK-MODE =================
+  const [theme, setTheme] = useState("light-theme");
+  
+  const toggleTheme = () => {
+    if (theme === "dark-theme") {
+      setTheme("light-theme");
+    } else {
+      setTheme("dark-theme");
+    }
+  }
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
+
+
   const [isActive, setIsActive] = useState("About");
   const [showLoader, setShowLoader] = useState(false);
 
@@ -54,34 +72,35 @@ const Hero: React.FC = () => {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0, transition: { delay: 1, duration: 2 } }}
       >
-        <div className="logo">
+        <div className="logo" style={{ opacity: isActive === "About" ? 1 : ''}}>
           <Link to="/">
-            <img className="logo1" src={Logohover} alt="" />
+            <div className="logo1" onClick={() => setIsActive("About")}>
+              <Logo />
+            </div>
           </Link>
         </div>
         <div className="navbar-content">
           <div
             onClick={() => setIsActive("About")}
-            className={`nav ${isActive === "About" ? "active" : ""}`}
+            className={`nav about-nav ${isActive === "About" ? "active" : ""}`}
           >
             <p>ABOUT</p>
           </div>
           <div
             onClick={() => setIsActive("Work")}
-            className={`nav ${isActive === "Work" ? "active" : ""}`}
+            className={`nav work-nav ${isActive === "Work" ? "active" : ""}`}
           >
             <p>WORK</p>
           </div>
           <div
             onClick={() => setIsActive("Blog")}
-            className={`nav ${isActive === "Blog" ? "active" : ""}`}
+            className={`nav blog-nav ${isActive === "Blog" ? "active" : ""}`}
           >
-            <Link to="/blog">
               <p>BLOG</p>
-            </Link>
           </div>
-
-          <img src={Moon} alt="" />
+          {/* <Tooltip text={"work in progress"}> */}
+          <img src={Moon} className="moon moon-nav" alt="" onClick={() => toggleTheme()} />
+          {/* </Tooltip> */}
         </div>
       </motion.div>
 
@@ -96,7 +115,7 @@ const Hero: React.FC = () => {
               initial={{ opacity: 0, marginTop: "0" }}
               animate={{
                 opacity: 1,
-                marginTop: "20px",
+                marginTop: "16px",
                 transition: { duration: 1 },
               }}
             >
@@ -158,7 +177,7 @@ const Hero: React.FC = () => {
           </a>
 
           <motion.p
-            className="request"
+            className="request request1"
             initial={{ opacity: 0, y: -10 }}
             animate={{
               opacity: 1,
@@ -166,7 +185,7 @@ const Hero: React.FC = () => {
               transition: { delay: 1, duration: 2 },
             }}
           >
-            CLICK ANYWHERE TO PLACE A SERVICE REQUEST
+            CLICK ANYWHERE WITHIN THE BOX TO PLACE A SERVICE REQUEST.
           </motion.p>
 
           {showLoader && (
@@ -277,15 +296,15 @@ const Hero: React.FC = () => {
               </div>
             </div>
           </a>
-          <p className="request" style={{ textDecoration: "none" }}>
-            CLICK ANYWHERE TO PLACE A SERVICE REQUEST
+          <p className="request request1" style={{ textDecoration: "none" }}>
+            CLICK ANYWHERE WITHIN THE BOX TO PLACE A SERVICE REQUEST.
           </p>
         </motion.div>
       )}
 
       {isActive === "Blog" && (
         <div>
-          <h1>Hello</h1>
+          <BlogPage />
         </div>
       )}
     </div>

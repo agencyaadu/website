@@ -2,12 +2,12 @@
   width: 100%;
   // margin: 0 auto;
   // height: calc(100vh - 155px);
-  aspect-ratio: 16/12;
+  aspect-ratio: 16/13;
   display: flex;
   flex-direction: column;
   // max-width: 55%;
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
 
   .loader {
     position: absolute;
@@ -26,8 +26,38 @@
       }
     }
   }
-
+  .logo {
+    position: relative;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out ;
+    a {
+      text-decoration: none;
+      background: transparent;
+      width: max-content;
+      transition: opacity 0.3s ease-in-out;
+      .logo1 {
+        background: transparent;
+        list-style: none;
+        position: relative;
+        transition: all 1.2s ease-in;
+        margin-left: 2rem;
+        width: max-content;
+        overflow: hidden;
+        position: relative;
+      }
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
   .navbar-content {
+    padding-right: 16px;
+    .about-nav {
+      display: none;
+    }
+    .moon-nav {
+      display: none;
+    }
     .nav {
       &.active {
         p {
@@ -81,23 +111,27 @@
         right: 20px;
         top: 50%;
         transform: translateY(-50%);
+        background: transparent;
 
         .flex {
           display: flex;
           align-items: center;
           justify-content: flex-end;
           gap: 7px;
+          background: transparent;
 
           img {
             height: 30px;
             object-fit: contain;
             width: fit-content;
+            background: transparent;
           }
         }
 
         .hand {
           width: 280px;
           animation: fadeIn 6s;
+          background: transparent;
         }
         // @keyframes fadeIn {
         //   0% {
@@ -113,6 +147,7 @@
         .way {
           width: 180px;
           animation: fadeOut 9s;
+          background: transparent;
         }
       }
     }
@@ -143,7 +178,7 @@
     background-repeat: no-repeat;
     background-position: left;
     background-size: 100% 100%;
-    margin-top: 20px;
+    margin-top: 16px;
     // flex: 1;
     display: grid;
     grid-template-columns: 1fr 6fr;
@@ -192,6 +227,9 @@
     font-family: "Walkway-Black";
     font-size: 8px;
   }
+  .request1 {
+    background: transparent;
+  }
 }
 
 .slider-carousel {
@@ -199,14 +237,5 @@
 
   .slider-card {
     width: 100%;
-  }
-}
-
-.logo1 {
-  opacity: 0.3;
-  transition: opacity 200ms ease-in;
-
-  &:hover {
-    opacity: 0.8;
   }
 }
