@@ -143,7 +143,7 @@ const BlogPost1: React.FC = () => {
                                             &nbsp; &nbsp; &nbsp; &nbsp;
                                             Next up, we'll talk about making your site easy for visitors to use. You want them to easily find what they're looking for and maybe stick around for a bit. It's like making your own website a cozy place that people want to hang out in. <br />
                                             &nbsp; &nbsp; &nbsp; &nbsp;
-                                            Now, your portfolio isn't just about the work you do; it's also about showing off a bit of who you are. We'll chat about putting your personality into your site – you know, making it feel like you. Finding that sweet spot between being professional and being yourself is the key. In my own portfolio, this mix has helped me connect with people who share my vision.
+                                            Now, your portfoli isn't just about the work you do; it's also about showing off a bit of who you are. We'll chat about putting your personality into your site – you know, making it feel like you. Finding that sweet spot between being professional and being yourself is the key. In my own portfolio, this mix has helped me connect with people who share my vision.
                                         </div>
                                         <div className="paragraph" topic-id="visual-storytelling" ref={ref2} >
                                             &nbsp; &nbsp; &nbsp; &nbsp;
