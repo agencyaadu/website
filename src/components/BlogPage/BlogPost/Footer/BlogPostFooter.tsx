@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from "react-router-dom";
-import Goat from "../../../../assets/icons/goattracks.svg";
+import back from "../../../../assets/images/backblog.png";
 import "../Style/BlogPost.scss";
 
 const BlogPostFooter:React.FC = () => {
+
     // ======= REDIRECT TO Top(0, 0) ======
     const scrollToTop = () => {
         window.scrollTo(0, 0)
@@ -11,12 +11,21 @@ const BlogPostFooter:React.FC = () => {
   return (
     <>
         <div className='backToBlog-wrapper'>
-            <p><span>CLICK</span> THE BUTTON BELOW TO  HEAD BACK</p>
-            <Link to='/blog' onClick={scrollToTop} className='link'>
-                <div className="button-to-blog">
-                    <img className="goat-icon" src={Goat} alt="back to blog section" />
+            <a href="/blog" onClick={scrollToTop}>
+                <div className="rectangle">
+                    <div className="text">
+                        <div className="main-text">
+                            <span>BACKSPACE</span>
+                        </div>
+                        <div className="back-text">
+                            <span>To go back</span>
+                        </div>
+                    </div>
+                    <div className="icon">
+                        <img src={back} alt="" />
+                    </div>
                 </div>
-            </Link>
+            </a>
         </div>
     </>
   )

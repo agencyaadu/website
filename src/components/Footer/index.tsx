@@ -1,5 +1,4 @@
 import React from "react";
-import Up from "../../assets/images/Vector.svg";
 import "./Footer.scss";
 
 const Footer: React.FC = () => {

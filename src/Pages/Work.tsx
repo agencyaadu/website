@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { useMediaQuery } from '@uidotdev/usehooks';
 import Footer from '../components/Footer';
@@ -7,30 +7,7 @@ import Response from '../components/Response';
 import Work from '../components/work';
 
 const Portfolio = () => {
-    const [isArrow, setIsArrow] = useState(false);
   const isTab = useMediaQuery("(max-width:768px)");
-
-  useEffect(() => {
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "ArrowDown") {
-        setIsArrow(true);
-      } else if (event.key === "ArrowUp") {
-        setIsArrow(false);
-      }
-    };
-
-    const handleScroll = () => {
-      setIsArrow(!isArrow);
-    };
-
-    window.addEventListener("keydown", handleKeyDown);
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <div>
@@ -38,23 +15,25 @@ const Portfolio = () => {
         <>
           <section>
             <motion.div
-              className="main"
-              animate={{
-                translateY : isArrow ? '-50%' : '0%',
-              }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
+              className="main" 
+              id='up'
             >
               <div className="app">
                 <Work />
               </div>
-              <div className="footerish" onClick={() => setIsArrow(true)}>
-                <Footer />
-              </div>
-              <section>
-                <div className="contact" onClick={() => setIsArrow(false)}>
-                  <Connect />
+              <a href="#down" style={{textDecoration:'none'}}>
+                <div className="footerish">
+                  <Footer />
                 </div>
-              </section>
+              </a>
+
+              <a href="#up" style={{textDecoration:'none'}}>
+                <section>
+                  <div className="contact" id='down'>
+                    <Connect />
+                  </div>
+                </section>
+              </a>
             </motion.div>
           </section>
         </>

@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import "./Blog.scss";
-import Logohover from "../../assets/icons/Logohover.svg";
-import Moon from "../../assets/icons/moon.svg";
-import { motion } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
-import Tooltip from "../Tooltip";
 import Post1 from "./BlogList/BlogList1";
 import Post2 from "./BlogList/BlogList2";
 import Post3 from "./BlogList/BlogList3";
@@ -23,8 +19,6 @@ const BlogPage: React.FC = () => {
       { isHomePage ? null : (
         <div
           className="header-wrapper"
-          // initial={{ opacity: 0, y: 10 }}
-          // animate={{ opacity: 1, y: 0, transition: { delay: 1, duration: 2 } }}
         >
           <div className="logo">
             <Link to="/">
@@ -34,14 +28,6 @@ const BlogPage: React.FC = () => {
             </Link>
           </div>
           <div className="navbar-content">
-            <div
-              onClick={() => setIsActive("About")}
-              className={`nav about-nav ${isActive === "About" ? "active" : ""}`}
-            >
-              <Link to="/">
-                <p>ABOUT</p>
-              </Link>
-            </div>
             <div
               onClick={() => setIsActive("Work")}
               className={`nav work-nav ${isActive === "Work" ? "active" : ""}`}
@@ -58,9 +44,6 @@ const BlogPage: React.FC = () => {
                 <p>BLOG</p>
               </Link>
             </div>
-            {/* <Tooltip text={"work in progress"}> */}
-            <img src={Moon} className="moon moon-nav" alt="" />
-            {/* </Tooltip> */}
           </div>
         </div>
       )}

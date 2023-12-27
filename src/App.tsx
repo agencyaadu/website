@@ -11,13 +11,15 @@ import Portfolio from "./Pages/Work";
 
 
 const App: React.FC = () => {
+
+  
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/work" element={<Portfolio />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/verification" element={<Verification />} />
-      <Route path="/blog/unlock-creative-potential" element={<BlogPost1 />} />
+      <Route path="/blog/portfolio" element={<BlogPost1 />} />
       <Route path="/blog/meta-mayhem" element={<BlogPost2 />} />
       <Route path="/blog/navigating-the-cloud" element={<BlogPost3 />} />
       <Route path="*" element={<NotFound />} />

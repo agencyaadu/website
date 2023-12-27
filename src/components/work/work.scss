@@ -49,69 +49,126 @@
     }
     .about-wrapper {
         position: relative;
-        .work-box {
-            width: 100%;
-            aspect-ratio: 16/9;
-            border-radius: 4px;
-            border: 1px solid #5835214d;
-            background-repeat: no-repeat;
-            background-position: left;
-            background-size: 100% 100%;
-            margin-top: 16px;
-            display: grid;
-            grid-template-columns: 1fr 6fr;
-            justify-content: space-between;
-            align-items: center;
-            padding: 30px;
-            gap: 20px;
-            cursor: pointer;
-            position: relative;
-            .box1 {
-                .background {
-                    background-color: #d9d9d9;
-                    width: 150px;
-                    height: 150px;
-                }
-                h5 {
-                    padding-top: 10px;
-                    letter-spacing: 3px;
-                    font-size: 10px;
-                    text-align: center;
-                    color: black;
-                }
-                p {
-                    font-size: 10px;
-                    color: #7a7a7a;
-                    letter-spacing: 1px;
-                    text-align: center;
-                }
-            }
-            .box2 {
+        a {
+            text-decoration: none;
+            .work-box {
                 width: 100%;
-                video {
+                aspect-ratio: 16/9;
+                border-radius: 4px;
+                border: 1px solid #5835214d;
+                align-items: center;
+                cursor: pointer;
+                position: relative;
+                overflow: hidden;
+                margin-top: 16px;
+                display: grid;
+                grid-template-columns: 1fr 4fr;
+                .box1 {
+                    height: 100%;
+                    position: relative !important;
+                    overflow: hidden;
+                    .rotator {
+                        position: absolute;
+                        left: -3450px;
+                        width: max-content;
+                        transform-origin: center;
+                        transform: rotate(-90deg);
+                        // border: 1px solid rosybrown;
+                        background: transparent;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2px;
+                        overflow: hidden;
+                        .services {
+                            background: transparent;
+                            margin-top: 12px;
+                            .text {
+                                white-space: nowrap;
+                                background: transparent;
+                                color: #C0C0C0;
+                                overflow: hidden;
+                                .text1 {
+                                    background: transparent;
+                                    animation: slide1 24s infinite linear;
+                                    display: inline-block;
+                                    text-align: right;
+                                    font-family: "Walkway-Bold";
+                                    font-size: 26px;
+                                    font-weight: 400;
+                                    font-style: normal;
+                                    text-transform: uppercase;
+                                    letter-spacing: 2.7px;
+                                }
+                            }
+                        }
+                        .testimonials {
+                            background: transparent;
+                            margin-bottom: 20px;
+                            .text {
+                                white-space: nowrap;
+                                background: transparent;
+                                color: #E4E4E4;
+                                overflow: hidden;
+                                .text1 {
+                                    background: transparent;
+                                    animation: slide2 20s linear infinite;
+                                    display: inline-block;
+                                    text-align: right;
+                                    font-family: "Walkway-Black";
+                                    font-size: 52px;
+                                    font-weight: 400;
+                                    font-style: normal;
+                                    text-transform: uppercase;
+                                    letter-spacing: 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .box2 {
                     width: 100%;
-                    object-fit: contain;
-                    border-radius: 5px;
+                    height: 100%;
+                    z-index: 3;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0 32px 0 16px;
+                    video {
+                        width: 100%;
+                        object-fit: cover;
+                        border-radius: 4px;
+                    }
                 }
             }
-        }
-        .request {
-            padding-top: 10px;
-            text-align: center;
-            letter-spacing: 1.5px;
-            color: #c9c9c9;
-            font-family: "Walkway-Black";
-            font-size: 8px;
-        }
-        .request1 {
-            background: transparent;
         }
     }
+    .request {
+        padding-top: 10px;
+        text-align: center;
+        letter-spacing: 1.5px;
+        color: #c9c9c9;
+        font-family: "Walkway-Black";
+        font-size: 8px;
+    }
+    .request1 {
+        background: transparent;
+    }
 }
-.slider-carousel {
-    width: 150px;
-  
-    .slider-card {
-      width: 100%;
+
+@keyframes slide1 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+@keyframes slide2 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
     }
 }

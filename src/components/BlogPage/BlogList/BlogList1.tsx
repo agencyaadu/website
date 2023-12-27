@@ -1,4 +1,4 @@
-// BlogList 1 : "Unlock Creative Potential"
+// BlogList 1 : "Portfolio"
 
 import {AiOutlineUser} from "react-icons/ai";
 import {LiaTagSolid} from "react-icons/lia";
@@ -18,12 +18,12 @@ export default function Post1() {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0, transition: { delay: 1, duration: 2 } }}
         >
-           <Link to='/blog/unlock-creative-potential' onClick={scrollToTop} className="link">
+           <Link to='/blog/portfolio' onClick={scrollToTop} className="link">
                 <div className="title">
-                <h3>Unlock Creative Potential</h3>
+                <h3>Portfolio</h3>
                 </div>
             </Link>
-            <p className="summary">A Journey Through Inspiring Portfolios. In this digital age, a well-designed and carefully curated portfolio can leave a lasting impact on potential clients, employers, or collaborators. With countless platforms available, it becomes essential to highlight your unique talents, skills, and achievements through an engaging website. Building my own portfolio has been an enriching journey, and I'd love to share the insights I've gathered. To spark your creativity and offer guidance for building your own portfolio, I've curated a collection of outstanding examples from various fields.</p>
+            <p className="summary">Hey there! Get ready to join me on a cool trip into the world of personal websites, where artists, designers, and all sorts of talented folks show off their awesome work. I'm super excited to share some tips and stories that'll help you make your own website stand out. Think of your portfolio as a fancy online resume – but way cooler. In today's digital world, having a great-looking portfolio is like having a golden ticket. It's how you show off your skills and catch the eye of people who might want to work with you.</p>
             <div className="info">
             <p className="author"><AiOutlineUser className="info-icon"/>  Prashant Rawat</p>
             <p><LiaTagSolid className="info-icon"/>  Portfolio</p>

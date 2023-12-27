@@ -1,43 +1,13 @@
-import React, { useState, useEffect } from "react";
-
-import { useMediaQuery } from "usehooks-ts";
+import React from "react";
 import { motion } from "framer-motion";
-
-import arrow from "../../assets/images/Vector.svg";
-
-import "./Blog.scss";
 import BlogPage from "../../components/BlogPage";
 import Response from "../../components/Response";
+import { useMediaQuery } from "usehooks-ts";
 import Connect from "../../components/Connect";
 import Footer from "../../components/Footer";
-// import Header from "../../components/Header";
 
 const Blog = () => {
-
-  const [isArrow, setIsArrow] = useState(false);
   const isTab = useMediaQuery("(max-width:768px)");
-
-  useEffect(() => {
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "ArrowDown") {
-        setIsArrow(true);
-      } else if (event.key === "ArrowUp") {
-        setIsArrow(false);
-      }
-    };
-
-    const handleScroll = () => {
-      setIsArrow(!isArrow);
-    };
-
-    window.addEventListener("keydown", handleKeyDown);
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <div>
@@ -48,23 +18,25 @@ const Blog = () => {
           {/* </Helmet> */}
           <section>
           <motion.div
-              className="main"
-              animate={{
-                translateY : isArrow ? '-50%' : '0%',
-              }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
-            >
-              <div className="app">
-                <BlogPage />
-              </div>
-              <div className="footerish" onClick={() => setIsArrow(true)}>
+            className="main"
+            id='up'    
+          >
+            <div className="app">
+              <BlogPage />
+            </div>
+            <a href="#down" style={{textDecoration:"none"}}>
+              <div className="footerish">
                 <Footer />
               </div>
+            </a>
+
+            <a href="#up" style={{textDecoration:"none"}}>
               <section>
-                <div className="contact" onClick={() => setIsArrow(false)}>
+                <div className="contact" id="down">
                   <Connect />
                 </div>
               </section>
+            </a>
             </motion.div>
           </section>
         </>

@@ -7,7 +7,7 @@ import { useInView } from 'react-intersection-observer';
 
 import Response from '../../Response';
 import BlogPostHeader from './Header/BlogPostHeader';
-// import BlogPostFooter from './Footer/BlogPostFooter';
+import BlogPostFooter from './Footer/BlogPostFooter';
 import './Style/BlogPost.scss';
       
 
@@ -43,25 +43,25 @@ const BlogPost2 = () => {
     );
     const [ref0, inView0] = useInView(
         {
-            threshold: 1,
+            threshold: 0.5,
             delay: 100,
         }
     );
     const [ref, inView] = useInView(
         {
-            threshold: 1,
+            threshold: 0.5,
             delay: 100,
         }
     );
     const [ref1, inView1] = useInView(
         {
-            threshold: 1,
+            threshold: 0.5,
             delay: 100,
         }
     );
     const [ref2, inView2] = useInView(
         {
-            threshold: 1,
+            threshold: 0.6,
             delay: 100,
         }
     );
@@ -121,26 +121,46 @@ const BlogPost2 = () => {
                                 <div className='content'>
                                     <div className='paragraphs' style={{overflowY: isOverflowVisible ? 'auto' : 'hidden'}}>
                                         <div className="paragraph" topic-id="introduction" ref={ref0}>
-                                            Is the Metaverse More Than Just Mark Zuckerberg's Midlife Crisis? <br /><br />Buckle up, folks, we're diving into the Meta-verse! No, not that cheesy sci-fi film from the 90s, but the real deal – Mark Zuckerberg's brainchild that's turning the internet inside out. <br /><br />But hold on, before you strap on your VR headset and dive headfirst into the virtual unknown, let's take a moment to ask: is the Metaverse truly the futuristic utopia Zuckerberg envisions, or is it just a shiny new toy for tech giants and a breeding ground for privacy nightmares?
+                                            &nbsp; &nbsp; &nbsp; &nbsp;
+                                            
+                                            Get ready for a thrilling journey into the Metaverse – not just some old sci-fi fantasy, but the real deal brought to life by none other than Mark Zuckerberg, reshaping the very essence of the internet.<br /><br />
+                                            
+                                            &nbsp; &nbsp; &nbsp; &nbsp;
+                                            But before you gear up with your VR headset and dive headfirst into this digital wonderland, let's pause for a moment. Is the Metaverse truly the futuristic utopia that Zuckerberg envisions, or is it merely another shiny plaything for the big tech giants, possibly paving the way for privacy nightmares? <br /><br />
+                                            
+                                            &nbsp; &nbsp; &nbsp; &nbsp;
+                                            Let's be honest – the Metaverse is currently navigating its awkward teenage phase. It's grappling with bugs, glitches, and enough cringe-worthy interactions to make even the most socially adept person blush. Just picture attending a virtual business meeting where your avatar decides to break into the robot dance instead of a professional handshake. Awkward? Absolutely. <br /><br />
+                                            Yet, amid this digital adolescence, the Metaverse holds immense potential. It has the power to revolutionize the way we work, socialize, and learn. Imagine collaborating with colleagues worldwide without leaving the comfort of your living room – the Metaverse has you covered. Want to attend a virtual concert featuring your favorite band, even if they're performing on the moon? No problem, the Metaverse is your ticket to such extraordinary experiences.
                                         </div>
                                         <div className="paragraph" topic-id="potential" ref={ref}>
-                                            Let's be honest, the Metaverse is still in its awkward teenage phase. It's full of bugs, glitches, and enough awkward interactions to make even the most confident social butterfly blush. Imagine attending a virtual business meeting where your avatar accidentally does the robot instead of shaking hands. Cringeworthy? Absolutely. <br /><br />But here's the thing: the Metaverse has potential. We're talking about revolutionizing the way we work, socialize, and even learn. Want to collaborate with colleagues worldwide without leaving your living room? Boom, the Metaverse has you covered. Want to attend a virtual concert with your favorite band, even if they're performing on the moon? No problem, Metaverse to the rescue!
+                                            &nbsp; &nbsp; &nbsp; &nbsp;
+                                            However, with great potential comes great responsibility. We must tread carefully and be wary of the potential pitfalls of the Metaverse – privacy concerns, the risk of addiction, and the looming threat of Zuckerberg evolving into a virtual overlord. The last thing we need is another platform for him to collect our data and fuel our insatiable need for virtual validation. <br /><br />
+                                            &nbsp; &nbsp; &nbsp; &nbsp;
+                                            So, is the Metaverse the future? Only time will reveal its true trajectory. One thing's for certain – it's going to be one wild ride. And guess what? (Cue the sly wink) We're not just spectators; we're your trusted guides through this digital frontier. At www.aadu.agency, we can craft a website that seamlessly fits into the Metaverse, a digital masterpiece that not only looks incredible but functions flawlessly, ensuring you stand out in your virtual neighborhood.
                                         </div>
                                         <div className="paragraph" topic-id="problem" ref={ref1}>
-                                            But with great potential comes great responsibility. We need to be wary of the potential pitfalls of the Metaverse: privacy concerns, addiction, and the ever-present threat of Zuckerberg becoming our virtual overlord. Let's face it, the last thing we need is another platform for him to collect our data and feed our insatiable need for virtual validation.
+                                            &nbsp; &nbsp; &nbsp; &nbsp;
+                                            Say goodbye to FOMO and jump aboard the Meta-revolution! Reach out today, and let's carve out your digital footprint in the virtual world before it becomes the hottest destination in town. Who knows, you might just become the next big virtual influencer, leaving Mark Zuckerberg a tad green with envy. <br /><br />
+                                            Remember, we're here to help you navigate the Metaverse, not become its next casualty. Ready for the adventure? Your digital odyssey awaits! <br /><br />
+                                            And as you embark on this journey, consider the exciting possibilities awaiting you within the Metaverse. Picture a realm where virtual classrooms offer engaging and immersive learning experiences, breaking down geographical barriers and expanding educational horizons. Envision a workplace where global teams seamlessly collaborate, transcending physical distances and unlocking unparalleled efficiency.
+                                            <br /><br />
+                                            Yet, in the midst of this digital evolution, we can't ignore the cautionary tales. Privacy becomes a paramount concern, with personal data traversing virtual landscapes. The allure of the Metaverse must not blind us to the potential risks – from data breaches to the overarching control of a few tech giants.
                                         </div>
                                         <div className="paragraph" topic-id="conclusion" ref={ref2}>
-                                            So, is the Metaverse the future? Only time will tell. But one thing's for sure: it's going to be one wild ride. And guess what? We (wink, wink) can help you navigate this digital frontier.
-                                            <br /><br />** We can build you a website that's not only Metaverse-ready but also visually stunning, ridiculously functional, and guaranteed to make you the envy of your virtual neighbors. <br /> <br />So, ditch the FOMO and join the Meta-revolution! Contact us today and let's build your digital footprint in the virtual world before it's too late. And who knows, maybe you'll even become the next virtual influencer, leaving Mark Zuckerberg green with envy. Just remember, we're here to help you navigate the Metaverse, not become its next victim.
+                                            &nbsp; &nbsp; &nbsp; &nbsp;
+                                            As we ponder the Metaverse's destiny, it's crucial to emphasize the role of individual agency. Your digital presence within this realm is not just a passive experience; it's an opportunity to shape and define your virtual identity. Crafting a website that mirrors your uniqueness is not merely a trend; it's a strategic move to establish your distinctiveness in the crowded digital sphere. <br /><br />
+                                            &nbsp; &nbsp; &nbsp; &nbsp;
+                                            At www.aadu.agency, we don't just build websites; we craft digital narratives that seamlessly integrate into the Metaverse. Our expertise goes beyond the technical – we understand the nuances of creating an online persona that resonates with authenticity. Your website isn't just a part of the Metaverse; it's a dynamic extension of who you are. <br /><br />So, as you contemplate the unfolding Metaverse saga, let www.aadu.agency be your companion on this digital odyssey. Together, let's navigate the uncharted territories, ensuring that your virtual presence not only survives but thrives in this ever-evolving landscape. Ready to make your mark in the Metaverse? Let's embark on this adventure together!
                                         </div>
                                     </div>
                                 </div>
+                
+                                {/* ======== Footer ========= */}
+                                <BlogPostFooter />
                             </div>
                         </div>
                     </motion.div>
                 </div>
-                {/* ======== Footer ========= */}
-                {/* <BlogPostFooter /> */}
                 </>
             ) : (
                 <Response />

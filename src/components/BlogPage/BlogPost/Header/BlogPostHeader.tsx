@@ -2,24 +2,15 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Logohover from "../../../../assets/icons/Logohover.svg";
-import Moon from "../../../../assets/icons/moon.svg";
 
 
 const BlogPostHeader: React.FC = () => {
     const [isActive, setIsActive] = useState("Blog");
 
-    // ====== Dark Mode =======
-    const [theme, setTheme] = useState("light-theme");
-    const toggleTheme = () => {
-        if (theme === "dark-theme") {
-        setTheme("light-theme");
-        } else {
-        setTheme("dark-theme");
-        }
+    const scrollToTop = () => {
+        window.scrollTo(0, 0)
     }
-    useEffect(() => {
-        document.body.className = theme;
-    }, [theme]);
+
     return (
         <>
             <motion.div
@@ -27,7 +18,7 @@ const BlogPostHeader: React.FC = () => {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0, transition: { delay: 1, duration: 2 } }}
             >
-            <div className="logo">
+            <div className="logo" onClick={scrollToTop}>
                 <Link to="/">
                     <img className="logo1" src={Logohover} alt="" />
                 </Link>
@@ -37,11 +28,10 @@ const BlogPostHeader: React.FC = () => {
                     onClick={() => setIsActive("Blog")}
                     className={`nav ${isActive === "Blog" ? "active" : ""}`}
                 >
-                    <Link to="/blog">
+                    <Link to="/blog" onClick={scrollToTop}>
                     <p>BLOG</p>
                     </Link>
                 </div>
-                    <img src={Moon} className="moon-nav" alt="" onClick={() => toggleTheme()} />
             </div>
             </motion.div>
         </>

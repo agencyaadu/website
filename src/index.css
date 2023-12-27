@@ -22,7 +22,8 @@
 }
 
 html {
-  /* scroll-snap-type: y mandatory; */
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -38,14 +39,13 @@ html {
 section {
   height: 100vh;
   /* overflow: hidden; */
-  /* scroll-snap-align: start; */
+  scroll-snap-align: start;
 }
 
 .main {
-  /* transform: translateY(-28%); */
+ 
 }
 .app {
-  /* transform: translateY(-500px); */
   padding: 10px 20px;
   height: 100vh;
   max-width: 55%;
@@ -75,26 +75,6 @@ section {
 
 :root {
   /* ================== COLORS ================== */
-  --bg-color: #fffbf6;
-  --mainpage-smalltext-color: #c9c9c9;
-  --mainpage-impsmalltext-color: #7a7a7a;
-  --inactive-text: #d9d9d9;
-  --black-color: #000;
-  --herobox-border-color: #5835214d;
-}
-
-.light-theme {
-  --bg-color: #fffbf6;
-  --mainpage-smalltext-color: #c9c9c9;
-  --mainpage-impsmalltext-color: #7a7a7a;
-  --inactive-text: #d9d9d9;
-  --black-color: #000;
-  --herobox-border-color: #5835214d;
-  --blogpageHeading-goathoof-color: #461f09;
-}
-
-/* ===== NEED TO CHANGE ==== */
-.dark-theme {
   --bg-color: #fffbf6;
   --mainpage-smalltext-color: #c9c9c9;
   --mainpage-impsmalltext-color: #7a7a7a;

@@ -23,7 +23,7 @@ export default function Post3() {
                 <h3>Navigating the Cloud</h3>
                 </div>
             </Link>
-            <p className="summary">A Hilarious Journey into Cloud Security Networks. Welcome, cloud enthusiasts, tech aficionados, and anyone who's ever wondered if the cloud is just a mythical place where data goes to relax and take a break. Today, we're diving into the nebulous world of Cloud Security Networks, and guess what? We're not just talking about it—we're making it as engaging as a comedy show! Buckle up for a hilarious journey through the clouds!</p>
+            <p className="summary">Can you believe the journey we've taken from A.I. being the star of sci-fi flicks to becoming our everyday companion? It's like having a quirky house elf straight out of our favorite fantasy series, showing up unexpectedly – from shaping our social media feeds to suggesting the perfect comeback (or throwing in an autocorrect curveball). But relax, no need to panic! A.I. isn't scheming to take your job or turn us into an army of robots (at least, not yet... let's keep it that way). </p>
             <div className="info">
             <p className="author"><AiOutlineUser className="info-icon"/>  Prashant Rawat</p>
             <p><LiaTagSolid className="info-icon"/>  Data</p>
