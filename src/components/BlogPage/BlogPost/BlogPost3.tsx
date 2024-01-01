@@ -1,4 +1,4 @@
-// Blog Post - 2 "Navigating the Cloud"
+// Blog Post - 3 "Navigating the Cloud"
 
 import React, { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
@@ -21,12 +21,8 @@ const BlogPost3 = () => {
     //       name: 'Introduction',
     //   },
     //   {
-    //       id: 'cloud-security',
-    //       name: 'Cloud Security',
-    //   },
-    //   {
-    //       id: 'choose-us?',
-    //       name: 'Choose Us?',
+    //       id: 'ai-in-daily-life',
+    //       name: 'AI in Daily Life',
     //   },
     //   {
     //       id: 'conclusion',
@@ -59,12 +55,6 @@ const BlogPost3 = () => {
             delay: 100,
         }
     );
-    const [ref2, inView2] = useInView(
-        {
-            threshold: 1,
-            delay: 100,
-        }
-    );
 
 
     // =========== Scroll to Topic ===========
@@ -88,9 +78,8 @@ const BlogPost3 = () => {
 
     // Topic Name
     const topicName = mainInView ? 
-        (inView2 ? 'Conclusion' :
-        inView1 ? 'Choose Us?' :
-        inView ? 'Cloud Security' :
+        (inView1 ? 'Conclusion' :
+        inView ? 'AI in Daily Life' :
         inView0 ? 'Introduction' : '') : '';
 
     return (
@@ -122,26 +111,28 @@ const BlogPost3 = () => {
                                     <div className='paragraphs' style={{overflowY: isOverflowVisible ? 'auto' : 'hidden'}}>
                                         <div className="paragraph" topic-id="introduction" ref={ref0}>
                                             &nbsp; &nbsp; &nbsp; &nbsp;
-                                            A Hilarious Journey into Cloud Security Networks. <br /><br />
-                                            
+                                            Can you believe the journey we've taken from A.I. being the star of sci-fi flicks to becoming our everyday companion? It's like having a quirky house elf straight out of our favorite fantasy series, showing up unexpectedly – from shaping our social media feeds to suggesting the perfect comeback (or throwing in an autocorrect curveball). <br /><br />
+
                                             &nbsp; &nbsp; &nbsp; &nbsp;
-                                            Welcome, cloud enthusiasts, tech aficionados, and anyone who's ever wondered if the cloud is just a mythical place where data goes to relax and take a break. Today, we're diving into the nebulous world of Cloud Security Networks, and guess what? We're not just talking about it—we're making it as engaging as a comedy show! Buckle up for a hilarious journey through the clouds! <br /><br />
-                                            
+                                            But relax, no need to panic! A.I. isn't scheming to take your job or turn us into an army of robots (at least, not yet... let's keep it that way). It's more like that friend who makes life a bit smoother, a bit funnier, and maybe a tad more intriguing. Picture it as the roommate who occasionally leaves you scratching your head, thinking, "What on earth are you up to now?" <br /><br />
+
                                             &nbsp; &nbsp; &nbsp; &nbsp;
-                                            So, you've heard about the cloud. It's not the cotton candy-filled haven we imagined as kids, but it's equally fascinating. Imagine your data floating around in the digital stratosphere, mingling with other bits and bytes, and occasionally catching a virtual tan. Sounds like a party, right?
+                                            So, how exactly is A.I. adding that extra dash of excitement to our lives? Here are a few ways it's making things more interesting!
+
                                         </div>
-                                        <div className="paragraph" topic-id="cloud-security" ref={ref}>
-                                            &nbsp; &nbsp; &nbsp; &nbsp;
-                                            Now, let's talk security. Every party needs a bouncer, even the ones happening in the digital cloud. Enter Cloud Security Networks—the ultimate guardians of your precious data. They're like the digital superheroes, protecting your information from cyber villains, data breaches, and other virtual mischiefs. <br />
-                                            Picture this: Cloud Security Networks are the cyber bouncers at the virtual nightclub. They stand at the digital entrance, scrutinizing every bit and byte that wants to join the party. "Hey, you with the suspicious code, step aside!" It's a wild world up there, but our digital bouncers are not here to mess around. <br />
-                                            In the cloud, security is not just about stern faces and serious codes. It's a dance—an intricate ballet of firewalls pirouetting gracefully and encryption algorithms cha-cha-ing to the rhythm of data protection. Who knew security could be so entertaining?
+                                        <div className="paragraph" topic-id="ai-in-daily-life" ref={ref}>
+                                            <strong>Mastering the Art of Dating Profiles and Tweets:</strong><br />
+                                            Feeling stuck with your dating profile? A.I.'s got your back, creating a bio so magnetic that potential matches can't resist (or at least swiping right like it's a sport). And when the tweet muse isn't cooperating, let A.I. take the reins, crafting that perfect witty comment or profound insight that might just break the internet (or at least get a chuckle from your grandma). <br /><br />
+                                            <strong>Dreaming Up Homes and Nailing Website Design:</strong><br />
+                                            Say goodbye to traditional architects and designers – A.I. is the new design wizard, conjuring up a home tailored exactly to your whims, whether you're into sleek minimalism or a cozy den with a cat paradise. And the headache of building a website? A.I.'s got you covered, creating stunning sites in record time (leaving you free to hunt down the ultimate cat GIF for your homepage). <br /><br />
                                         </div>
-                                        <div className="paragraph" topic-id="choose-us" ref={ref1}>
-                                            &nbsp; &nbsp; &nbsp; &nbsp;
-                                            Now, here's the punchline: at www.aadu.agency, we're not just cloud enthusiasts; we're your digital comedy club for all things tech. Our team of expert performers—uh, we mean developers—knows how to make the serious business of Cloud Security Networks sound like a stand-up routine. <br /><br />1.  <strong>Laughs Guaranteed:</strong> Because who said tech discussions have to be boring? We inject humor into every line of code and every layer of security. <br /><br />2. <strong>Cloud Security Wizards:</strong> Our team knows their way around the digital dance floor. From firewalls doing the moonwalk to encryption algorithms doing the floss, we've got it all covered. <br /><br />3. <strong>Your Data's Best Friend:</strong> We take Cloud Security seriously, so you can relax and enjoy the virtual party without worrying about gatecrashers.
-                                        </div>
-                                        <div className="paragraph" topic-id="conclusion" ref={ref2}>
-                                        If you're ready to turn the serious business of Cloud Security into a comedy show, www.aadu.agency is your ticket to the front row. We make the digital dance of firewalls and encryption a side-splitting spectacle. Connect with us today, and let's make your Cloud Security journey as entertaining as a night out at the virtual comedy club! <br /><br />Remember, in the world of clouds, laughter is the best security policy. Visit wwww.aadu.agency now, and let's turn your digital security into a comedy masterpiece!
+                                        <div className="paragraph" topic-id="conclusion" ref={ref1}>
+                                            <strong>Beyond the Ordinary:</strong><br />
+                                            But A.I. isn't limiting itself to the mundane. Imagine a future where A.I. plays a role in solving scientific mysteries, writes novels to rival the classics, and composes music that would make Beethoven do a double-take. It's a bit mind-boggling, and the future is shaping up to be wonderfully... unpredictable. <br /><br />
+                                            <strong>Ready to Dive into the A.I. Wave?</strong><br />
+                                            We (hint, hint) can be your ticket to the A.I. revolution, creating a website that's not just visually stunning but A.I.-powered. Imagine a site that understands you, learns your quirks, and delivers an experience that's truly out of this world. <br /><br />
+                                        
+                                            So, what's holding you back? A.I. is like the coolest thing in town, making life easier, funnier, and maybe a bit more bizarre. Just keep an eye on your robot pizza chef – who knows what culinary surprises it might whip up next. Ready to embark on the A.I. adventure? Let's make it happen!
                                         </div>
                                     </div>
                                 </div>
