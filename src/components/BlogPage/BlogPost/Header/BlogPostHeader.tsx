@@ -23,7 +23,7 @@ const BlogPostHeader: React.FC = () => {
                     <img className="logo1" src={Logohover} alt="" />
                 </Link>
             </div>
-            <div className="navbar-content">
+            <div className="navbar-content blogNavbar-content">
                 <div
                     onClick={() => setIsActive("Blog")}
                     className={`nav ${isActive === "Blog" ? "active" : ""}`}

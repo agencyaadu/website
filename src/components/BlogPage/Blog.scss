@@ -141,3 +141,67 @@
         }
     }
 }
+
+
+@media screen and (max-width: 430px) {
+  .BlogPage-wrapper {
+    height: 100%;
+    .navbar-content {
+      .nav {
+        a {
+          p {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+    .BlogPost {
+      margin-top: 6px;
+      height: 90%;
+      padding: 20px 18px;
+      .post {
+        margin-bottom: 3rem;
+        .link {
+          .title {
+            margin-bottom: 0.4rem;
+            h3 {
+              font-size: 1.5rem;
+            }
+          }
+        }
+        .summary {
+          font-size: 0.7rem;
+          text-align: justify;
+        }
+        .info {
+          margin-top: 0.42rem;
+          gap: 1rem;
+        }
+      }
+    }
+    .BlogPostWBlog {
+      margin-top: 6px;
+      height: 84%;
+      padding: 20px 18px;
+      .post {
+        margin-bottom: 3rem;
+        .link {
+          .title {
+            margin-bottom: 0.4rem;
+            h3 {
+              font-size: 1.5rem;
+            }
+          }
+        }
+        .summary {
+          font-size: 0.7rem;
+          text-align: justify;
+        }
+        .info {
+          margin-top: 0.42rem;
+          gap: 1rem;
+        }
+      }
+    }
+  }
+}

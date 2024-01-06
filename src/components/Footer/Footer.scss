@@ -44,3 +44,30 @@
     }
   }
 }
+
+@media screen and (max-width: 430px) {
+  .footer-wrapper {
+    padding: 0 8px 10px;
+    .footer-container {
+      padding: 2px 0;
+      .arrow {
+        .main-arrow {
+          width: 10px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .footer-wrapper {
+    padding: 0 4px 5px;
+    .footer-container {
+      padding: 1px 0;
+      .arrow {
+        .main-arrow {
+          width: 6px;
+        }
+      }
+    }
+  }
+}

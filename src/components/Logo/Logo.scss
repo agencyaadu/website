@@ -30,3 +30,28 @@
     //     }
     // }
 }
+@media screen and (max-width: 430px) {
+    .Logo-wrapper {
+        .boththewords {
+            .greyish {
+                font-size: 22px;
+            }
+            .goat-us {
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .Logo-wrapper {
+        .boththewords {
+            .greyish {
+                font-size: 18px;
+            }
+            .goat-us {
+                font-size: 24px;
+            }
+        }
+    }
+  }

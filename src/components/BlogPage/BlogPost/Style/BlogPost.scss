@@ -39,6 +39,7 @@
             justify-content: center;
             margin-bottom: 0.88rem;
             h2 {
+                width: 90%;
                 text-align: center;
                 color: var(--GoatHoof, #461F09);
                 font-family: DM Serif Display;
@@ -196,6 +197,76 @@
         &:active {
             .rectangle {
                 border: 1px solid rgb(208, 208, 208, 1);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .BlogPost-wrapper {
+        padding: 6% 12px 0 12px;
+        .header-blog {
+            margin-bottom: 5rem;
+            gap: 24px;
+            .logo {
+                a {
+                    text-decoration: none;
+                    .logo1 {
+                        width: 78px;
+                    }
+                }
+            }
+            .blogNavbar-content {
+                .nav {
+                    a {
+                        p {
+                            font-size: 0.75rem;
+                        }
+                    }
+                }
+            }
+        }
+        .BlogPostContent {
+            .title {
+                h2 {
+                    font-size: 2.4rem;
+                    letter-spacing: -0.1rem;
+                }
+            }
+            .static-page {
+                margin-top: 2.5rem;
+                .topic {
+                    width: 92%;
+                    .topic-name {
+                        font-size: 0.92rem;
+                    }
+                }
+                .scrolled-content {
+                    width: 92%;
+                    .content {
+                        .paragraphs {
+                            padding: 2rem 1rem 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .BlogPost-wrapper {
+        .BlogPostContent {
+            .static-page {
+                .scrolled-content {
+                    .content {
+                        .paragraphs {
+                            .paragraph {
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

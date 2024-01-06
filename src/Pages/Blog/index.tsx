@@ -1,28 +1,24 @@
 import React from "react";
 import { motion } from "framer-motion";
 import BlogPage from "../../components/BlogPage";
-import Response from "../../components/Response";
-import { useMediaQuery } from "usehooks-ts";
 import Connect from "../../components/Connect";
 import Footer from "../../components/Footer";
+import "../../index.css";
 
 const Blog = () => {
-  const isTab = useMediaQuery("(max-width:768px)");
 
   return (
     <div>
-      {!isTab ? (
         <>
-          {/* <Helmet> */}
-            <title>Blog - aA</title>
-          {/* </Helmet> */}
           <section>
           <motion.div
             className="main"
             id='up'    
           >
             <div className="app">
-              <BlogPage />
+              <div className="completeBlog-wrapper">
+                <BlogPage />
+              </div>
             </div>
             <a href="#down" style={{textDecoration:"none"}}>
               <div className="footerish">
@@ -40,9 +36,6 @@ const Blog = () => {
             </motion.div>
           </section>
         </>
-      ) : (
-        <Response />
-      )}
     </div>
   );
 };

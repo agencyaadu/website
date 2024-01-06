@@ -48,7 +48,7 @@ const BlogPage: React.FC = () => {
         </div>
       )}
 
-      <div className="BlogPost">
+      <div className={`BlogPost ${isHomePage ? '' : 'BlogPostWBlog'}`}>
         <Post1 />
         <Post2 />
         <Post3 />

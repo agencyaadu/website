@@ -41,7 +41,7 @@ const Work: React.FC = () => {
             target="_blank"
           >
             <div className="work-box">
-              <div className="box1">
+              <div className="box1 mob-box">
                 <div className="rotator">
                   <div className="services">
                     <div className="text">
@@ -59,13 +59,13 @@ const Work: React.FC = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="testimonials">
+                  <div className="testimonials desktop-testimonials">
                     <div className="text">
-                      <div className="text1">
-                        PRODUCT ROADMAPING . PRODUCT DEVELOPMENT . 3D MODELLING . 3D ANIMATION . 2D ANIMATION . 
+                      <div className="text1 text2">
+                        PRODUCT ROADMAPING . PRODUCT DEVELOPMENT . 3D MODELLING . 3D ANIMATION . 2D ANIMATION .&nbsp;
                       </div>
-                      <div className="text1">
-                        PRODUCT ROADMAPING . PRODUCT DEVELOPMENT . 3D MODELLING . 3D ANIMATION . 2D ANIMATION . 
+                      <div className="text1 text2">
+                        PRODUCT ROADMAPING . PRODUCT DEVELOPMENT . 3D MODELLING . 3D ANIMATION . 2D ANIMATION .&nbsp;
                       </div>
                     </div>
                   </div>
@@ -81,7 +81,23 @@ const Work: React.FC = () => {
                   <source src={game} type="video/mp4" />
                 </video>
               </div>
+
+              <div className="box1 box3">
+                <div className="rotator rotator2">
+                  <div className="testimonials mob-testimonials">
+                    <div className="text">
+                      <div className="text1 text2">
+                        PRODUCT ROADMAPING . PRODUCT DEVELOPMENT . 3D MODELLING . 3D ANIMATION . 2D ANIMATION .&nbsp;
+                      </div>
+                      <div className="text1 text2">
+                        PRODUCT ROADMAPING . PRODUCT DEVELOPMENT . 3D MODELLING . 3D ANIMATION . 2D ANIMATION .&nbsp;
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+
           </a>
           <p className="request request1" style={{ textDecoration: "none" }}>
             CLICK ANYWHERE WITHIN THE BOX TO PLACE A SERVICE REQUEST.

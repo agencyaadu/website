@@ -7,8 +7,12 @@ import Five from "../../assets/icons/Vector (6).svg";
 import Six from "../../assets/icons/Vector (7).svg";
 import Seven from "../../assets/icons/Vector (8).svg";
 import "./Connect.scss";
+import { useMediaQuery } from "@uidotdev/usehooks";
 
 const Connect: React.FC = () => {
+  const isMobile = useMediaQuery("(max-width:430px)");
+  const isSmolMobile = useMediaQuery("(max-width:320px)");
+
   return (
     <div className="connect-wrapper">
       <div className="connect-container">
@@ -24,13 +28,13 @@ const Connect: React.FC = () => {
             <h5>6/196 , THOTIYANKADU 639136 IN</h5>
 
             <div className="icon">
-              <img src={One} alt="" />
-              <img src={Two} alt="" />
-              <img src={Three} alt="" />
-              <img src={Four} alt="" />
-              <img src={Five} alt="" />
-              <img src={Six} alt="" />
-              <img src={Seven} alt="" />
+              <img src={One} alt="" className="iconsm" style={{ width: isSmolMobile ? "12px" : isMobile ? "15px" : "18px" }}/>
+              <img src={Two} alt="" className="iconsm" style={{ width: isSmolMobile ? "12px" : isMobile ? "15px" : "18px" }}/>
+              <img src={Three} alt="" className="iconsm" style={{ width: isSmolMobile ? "12px" : isMobile ? "15px" : "18px" }}/>
+              <img src={Four} alt="" className="iconsm" style={{ width: isSmolMobile ? "12px" : isMobile ? "15px" : "18px" }}/>
+              <img src={Five} alt="" className="iconsm" style={{ width: isSmolMobile ? "12px" : isMobile ? "15px" : "18px" }}/>
+              <img src={Six} alt="" className="iconsm" style={{ width: isSmolMobile ? "12px" : isMobile ? "15px" : "18px" }}/>
+              <img src={Seven} alt="" className="iconsm" style={{ width: isSmolMobile ? "12px" : isMobile ? "15px" : "18px" }}/>
             </div>
           </div>
           <div className="line"></div>

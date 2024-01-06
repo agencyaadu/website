@@ -5,14 +5,13 @@ import { motion } from "framer-motion";
 import { useMediaQuery } from 'usehooks-ts';
 import { useInView } from 'react-intersection-observer';
 
-import Response from '../../Response';
 import BlogPostHeader from './Header/BlogPostHeader';
 import BlogPostFooter from './Footer/BlogPostFooter';
 import './Style/BlogPost.scss';
       
 
 const BlogPost3 = () => {
-    const isTab = useMediaQuery("(max-width:768px)");
+    const isMobile = useMediaQuery("(max-width:430px)");
 
     // // =========== List of Topics ========
     // const topics: Topic [] = [
@@ -45,13 +44,13 @@ const BlogPost3 = () => {
     );
     const [ref, inView] = useInView(
         {
-            threshold: 0.8,
+            threshold: isMobile ? 0.6 : 0.8,
             delay: 100,
         }
     );
     const [ref1, inView1] = useInView(
         {
-            threshold: 0.6,
+            threshold: isMobile ? 0.5 : 0.6,
             delay: 100,
         }
     );
@@ -73,7 +72,7 @@ const BlogPost3 = () => {
         };
     }, []);
 
-    const maxScrollPosition = 410;
+    const maxScrollPosition = isMobile ? 200 : 410;
     const isOverflowVisible = scrollPosition >= maxScrollPosition;
 
     // Topic Name
@@ -84,69 +83,65 @@ const BlogPost3 = () => {
 
     return (
         <div>
-            {!isTab ? (
-                <>
-                <div className="BlogPost-wrapper">
-                    {/* ======= Nav Bar ========= */}
-                    <BlogPostHeader />
+            <>
+            <div className="BlogPost-wrapper">
+                {/* ======= Nav Bar ========= */}
+                <BlogPostHeader />
 
-                    {/* =========================== BLOG PAGE =========================== */}
-                    <motion.div
-                        className="BlogPostContent"
-                        initial={{ opacity: 0, y: -8 }}
-                        animate={{ opacity: 1, y: 0, transition: { delay: 1, duration: 2 } }}
-                    >
-                        <div className="title">
-                            <h2>Navigating the Cloud</h2>
-                        </div>
-                        {/* === From where the static page starts === */}
-                        <div className="static-page">
-                            <div className="topic">
-                                <div className="topic-name">
-                                    {topicName}
-                                </div>
+                {/* =========================== BLOG PAGE =========================== */}
+                <motion.div
+                    className="BlogPostContent"
+                    initial={{ opacity: 0, y: -8 }}
+                    animate={{ opacity: 1, y: 0, transition: { delay: 1, duration: 2 } }}
+                >
+                    <div className="title">
+                        <h2>Navigating the Cloud</h2>
+                    </div>
+                    {/* === From where the static page starts === */}
+                    <div className="static-page">
+                        <div className="topic">
+                            <div className="topic-name">
+                                {topicName}
                             </div>
-                            <div className="scrolled-content" ref={mainRef}>
-                                <div className='content'>
-                                    <div className='paragraphs' style={{overflowY: isOverflowVisible ? 'auto' : 'hidden'}}>
-                                        <div className="paragraph" topic-id="introduction" ref={ref0}>
-                                            &nbsp; &nbsp; &nbsp; &nbsp;
-                                            Can you believe the journey we've taken from A.I. being the star of sci-fi flicks to becoming our everyday companion? It's like having a quirky house elf straight out of our favorite fantasy series, showing up unexpectedly – from shaping our social media feeds to suggesting the perfect comeback (or throwing in an autocorrect curveball). <br /><br />
+                        </div>
+                        <div className="scrolled-content" ref={mainRef}>
+                            <div className='content'>
+                                <div className='paragraphs' style={{overflowY: isOverflowVisible ? 'auto' : 'hidden'}}>
+                                    <div className="paragraph" topic-id="introduction" ref={ref0}>
+                                        &nbsp; &nbsp; &nbsp; &nbsp;
+                                        Can you believe the journey we've taken from A.I. being the star of sci-fi flicks to becoming our everyday companion? It's like having a quirky house elf straight out of our favorite fantasy series, showing up unexpectedly – from shaping our social media feeds to suggesting the perfect comeback (or throwing in an autocorrect curveball). <br /><br />
 
-                                            &nbsp; &nbsp; &nbsp; &nbsp;
-                                            But relax, no need to panic! A.I. isn't scheming to take your job or turn us into an army of robots (at least, not yet... let's keep it that way). It's more like that friend who makes life a bit smoother, a bit funnier, and maybe a tad more intriguing. Picture it as the roommate who occasionally leaves you scratching your head, thinking, "What on earth are you up to now?" <br /><br />
+                                        &nbsp; &nbsp; &nbsp; &nbsp;
+                                        But relax, no need to panic! A.I. isn't scheming to take your job or turn us into an army of robots (at least, not yet... let's keep it that way). It's more like that friend who makes life a bit smoother, a bit funnier, and maybe a tad more intriguing. Picture it as the roommate who occasionally leaves you scratching your head, thinking, "What on earth are you up to now?" <br /><br />
 
-                                            &nbsp; &nbsp; &nbsp; &nbsp;
-                                            So, how exactly is A.I. adding that extra dash of excitement to our lives? Here are a few ways it's making things more interesting!
+                                        &nbsp; &nbsp; &nbsp; &nbsp;
+                                        So, how exactly is A.I. adding that extra dash of excitement to our lives? Here are a few ways it's making things more interesting!
 
-                                        </div>
-                                        <div className="paragraph" topic-id="ai-in-daily-life" ref={ref}>
-                                            <strong>Mastering the Art of Dating Profiles and Tweets:</strong><br />
-                                            Feeling stuck with your dating profile? A.I.'s got your back, creating a bio so magnetic that potential matches can't resist (or at least swiping right like it's a sport). And when the tweet muse isn't cooperating, let A.I. take the reins, crafting that perfect witty comment or profound insight that might just break the internet (or at least get a chuckle from your grandma). <br /><br />
-                                            <strong>Dreaming Up Homes and Nailing Website Design:</strong><br />
-                                            Say goodbye to traditional architects and designers – A.I. is the new design wizard, conjuring up a home tailored exactly to your whims, whether you're into sleek minimalism or a cozy den with a cat paradise. And the headache of building a website? A.I.'s got you covered, creating stunning sites in record time (leaving you free to hunt down the ultimate cat GIF for your homepage). <br /><br />
-                                        </div>
-                                        <div className="paragraph" topic-id="conclusion" ref={ref1}>
-                                            <strong>Beyond the Ordinary:</strong><br />
-                                            But A.I. isn't limiting itself to the mundane. Imagine a future where A.I. plays a role in solving scientific mysteries, writes novels to rival the classics, and composes music that would make Beethoven do a double-take. It's a bit mind-boggling, and the future is shaping up to be wonderfully... unpredictable. <br /><br />
-                                            <strong>Ready to Dive into the A.I. Wave?</strong><br />
-                                            We (hint, hint) can be your ticket to the A.I. revolution, creating a website that's not just visually stunning but A.I.-powered. Imagine a site that understands you, learns your quirks, and delivers an experience that's truly out of this world. <br /><br />
-                                        
-                                            So, what's holding you back? A.I. is like the coolest thing in town, making life easier, funnier, and maybe a bit more bizarre. Just keep an eye on your robot pizza chef – who knows what culinary surprises it might whip up next. Ready to embark on the A.I. adventure? Let's make it happen!
-                                        </div>
+                                    </div>
+                                    <div className="paragraph" topic-id="ai-in-daily-life" ref={ref}>
+                                        <strong>Mastering the Art of Dating Profiles and Tweets:</strong><br />
+                                        Feeling stuck with your dating profile? A.I.'s got your back, creating a bio so magnetic that potential matches can't resist (or at least swiping right like it's a sport). And when the tweet muse isn't cooperating, let A.I. take the reins, crafting that perfect witty comment or profound insight that might just break the internet (or at least get a chuckle from your grandma). <br /><br />
+                                        <strong>Dreaming Up Homes and Nailing Website Design:</strong><br />
+                                        Say goodbye to traditional architects and designers – A.I. is the new design wizard, conjuring up a home tailored exactly to your whims, whether you're into sleek minimalism or a cozy den with a cat paradise. And the headache of building a website? A.I.'s got you covered, creating stunning sites in record time (leaving you free to hunt down the ultimate cat GIF for your homepage). <br /><br />
+                                    </div>
+                                    <div className="paragraph" topic-id="conclusion" ref={ref1}>
+                                        <strong>Beyond the Ordinary:</strong><br />
+                                        But A.I. isn't limiting itself to the mundane. Imagine a future where A.I. plays a role in solving scientific mysteries, writes novels to rival the classics, and composes music that would make Beethoven do a double-take. It's a bit mind-boggling, and the future is shaping up to be wonderfully... unpredictable. <br /><br />
+                                        <strong>Ready to Dive into the A.I. Wave?</strong><br />
+                                        We (hint, hint) can be your ticket to the A.I. revolution, creating a website that's not just visually stunning but A.I.-powered. Imagine a site that understands you, learns your quirks, and delivers an experience that's truly out of this world. <br /><br />
+                                    
+                                        So, what's holding you back? A.I. is like the coolest thing in town, making life easier, funnier, and maybe a bit more bizarre. Just keep an eye on your robot pizza chef – who knows what culinary surprises it might whip up next. Ready to embark on the A.I. adventure? Let's make it happen!
                                     </div>
                                 </div>
-                                
-                                {/* ======== Footer ========= */}
-                                <BlogPostFooter />
                             </div>
+                            
+                            {/* ======== Footer ========= */}
+                            <BlogPostFooter />
                         </div>
-                    </motion.div>
-                </div>
-                </>
-            ) : (
-                <Response />
-            )}
+                    </div>
+                </motion.div>
+            </div>
+            </>
         </div>
     )
 };

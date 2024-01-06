@@ -17,12 +17,14 @@ import Way from "../../assets/images/way.svg";
 import Game from "../../assets/images/game.mp4";
 import { motion } from "framer-motion";
 import BlogPage from "../BlogPage";
+import { useMediaQuery } from "@uidotdev/usehooks";
 
 
 const Hero: React.FC = () => {
 
   const [isActive, setIsActive] = useState("About");
   const [showLoader, setShowLoader] = useState(false);
+  const isMobile = useMediaQuery("(max-width:430px)");
 
   useEffect(() => {
     if (isActive !== "About") {
@@ -85,7 +87,7 @@ const Hero: React.FC = () => {
               initial={{ opacity: 0, marginTop: "0" }}
               animate={{
                 opacity: 1,
-                marginTop: "16px",
+                marginTop: isMobile ? "6px" : "16px",
                 transition: { duration: 1 },
               }}
             >
@@ -177,13 +179,13 @@ const Hero: React.FC = () => {
       )}
 
       {isActive === "Work" && (
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 2 } }}>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 2 } }} className="box-wrapper">
           <a
             href="https://survey.qwary.com/form/S_wSzSPnasH9Wc_FT15X0J1BuEcPl5gIB0kGxc-dgSo="
             target="_blank"
           >
             <div className="work-box">
-              <div className="box1">
+              <div className="box1 mob-box">
                 <div className="rotator">
                   <div className="services">
                     <div className="text">
@@ -201,13 +203,13 @@ const Hero: React.FC = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="testimonials">
+                  <div className="testimonials desktop-testimonials">
                     <div className="text">
-                      <div className="text1">
-                        PRODUCT ROADMAPING . PRODUCT DEVELOPMENT . 3D MODELLING . 3D ANIMATION . 2D ANIMATION . 
+                      <div className="text1 text2">
+                        PRODUCT ROADMAPING . PRODUCT DEVELOPMENT . 3D MODELLING . 3D ANIMATION . 2D ANIMATION .&nbsp;
                       </div>
-                      <div className="text1">
-                        PRODUCT ROADMAPING . PRODUCT DEVELOPMENT . 3D MODELLING . 3D ANIMATION . 2D ANIMATION . 
+                      <div className="text1 text2">
+                        PRODUCT ROADMAPING . PRODUCT DEVELOPMENT . 3D MODELLING . 3D ANIMATION . 2D ANIMATION .&nbsp;
                       </div>
                     </div>
                   </div>
@@ -215,15 +217,27 @@ const Hero: React.FC = () => {
               </div>
 
               <div className="box2">
-                <video autoPlay muted onEnded={() => {
-                  setTimeout(()=> {
-                    window.location.reload();
-                  }, 3000);
-                }}>
+                <video autoPlay muted>
                   <source src={Game} type="video/mp4" />
                 </video>
               </div>
+
+              <div className="box1 box3">
+                <div className="rotator rotator2">
+                  <div className="testimonials mob-testimonials">
+                    <div className="text">
+                      <div className="text1 text2">
+                        PRODUCT ROADMAPING . PRODUCT DEVELOPMENT . 3D MODELLING . 3D ANIMATION . 2D ANIMATION .&nbsp;
+                      </div>
+                      <div className="text1 text2">
+                        PRODUCT ROADMAPING . PRODUCT DEVELOPMENT . 3D MODELLING . 3D ANIMATION . 2D ANIMATION .&nbsp;
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+            
           </a>
           <p className="request request1" style={{ textDecoration: "none" }}>
             CLICK ANYWHERE WITHIN THE BOX TO PLACE A SERVICE REQUEST.
@@ -232,7 +246,7 @@ const Hero: React.FC = () => {
       )}
 
       {isActive === "Blog" && (
-        <div>
+        <div className="mob-blog-home">
           <BlogPage />
         </div>
       )}
@@ -241,3 +255,10 @@ const Hero: React.FC = () => {
 };
 
 export default Hero;
+
+
+// onEnded={() => {
+//   setTimeout(()=> {
+//     window.location.reload();
+//   }, 3000);
+// }}

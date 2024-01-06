@@ -172,3 +172,68 @@
         transform: translateX(100%);
     }
 }
+
+@media screen and (max-width: 430px) {
+    .work-wrapper {
+        height: 70vh;
+        justify-content: center;
+
+        .header-wrapper {
+            .navbar-content {
+                .nav {
+                    p {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+
+        .about-wrapper {
+            height: 100%;
+            a {
+                .work-box {
+                    height: 90%;
+                    margin-top: 6px;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 3fr 1fr;
+                    .box1 {
+                        .rotator {
+                            position: relative;
+                            transform: rotate(0deg);
+                            .desktop-testimonials {
+                                display: none;
+                            }
+                        }
+                    }
+                    .mob-box {
+                        display: grid;
+                        align-items: end;
+                        .rotator {
+                            .services {
+                                margin-top: 0;
+                                padding-bottom: 12px;
+                                .text {
+                                    .text1 {
+                                        font-size: 36px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .box2 {
+                        padding: 0 4px;
+                    }
+                    .box3 {
+                        display: block;
+                    }
+                }
+            }
+        }
+        .request {
+            padding-top: 8px;
+            letter-spacing: 1px;
+            font-size: 7px;
+        }
+    }
+}
