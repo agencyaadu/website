@@ -1,14 +1,11 @@
 import React, { useEffect } from "react";
 import Text1 from "../../assets/images/Handheld..svg";
 import "./Hero.scss";
-import Moon from "../../assets/icons/moon.svg";
 import { useState } from "react";
 import "../Header/Header.scss";
 import { Link } from "react-router-dom";
-import Logohover from "../../assets/icons/Logohover.svg";
 import Logo from "../Logo";
 import Loading from "../Loading";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import All from "../../assets/images/All.svg";
@@ -217,7 +214,11 @@ const Hero: React.FC = () => {
               </div>
 
               <div className="box2">
-                <video autoPlay muted>
+                <video autoPlay muted onEnded={() => {
+                  setTimeout(()=> {
+                    window.location.reload();
+                  }, 3000);
+                }}>
                   <source src={Game} type="video/mp4" />
                 </video>
               </div>
@@ -255,10 +256,3 @@ const Hero: React.FC = () => {
 };
 
 export default Hero;
-
-
-// onEnded={() => {
-//   setTimeout(()=> {
-//     window.location.reload();
-//   }, 3000);
-// }}
