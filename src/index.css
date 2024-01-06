@@ -48,6 +48,7 @@ section {
 .app {
   padding: 10px 20px;
   height: 100vh;
+  max-height: 100%;
   max-width: 55%;
   margin: 0 auto;
   display: flex;
