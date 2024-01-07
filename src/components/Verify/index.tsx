@@ -14,7 +14,7 @@ const Verify: React.FC = () => {
     e.preventDefault();
 
     // Add email here
-    const validEmails = process.env.REACT_APP_VALID_EMAILS? process.env.REACT_APP_VALID_EMAILS.split(',') : [];
+    const validEmails = ['freddy@aadu.agency', 'sahu@aadu.agency', 'pk@aadu.agency', 'aster@aadu.agency'];
 
     if (validEmails.includes(inputEmail.toLowerCase())) {
       setVerificationResult('Verified ID');
