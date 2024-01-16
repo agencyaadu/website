@@ -11,6 +11,7 @@ const Response: React.FC = () => {
         <div className="gap">
           <img className="right" src={Icon} alt="" />
           <h1>mini website</h1>
+          {/* FOR VERCEL UPDATE */}
         </div>
 
         <div className="company-title">
