@@ -263,3 +263,11 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .work-wrapper {
+        .cursor {
+            display: none;
+        }
+    }
+}

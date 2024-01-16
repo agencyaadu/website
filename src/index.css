@@ -72,6 +72,15 @@ section {
   width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  * {
+    cursor: default;
+  }
+  section {
+    cursor: default;
+  }
+}
+
 @media (max-width: 1440px) {
   .app, .footerish {
     max-width: 750px;
