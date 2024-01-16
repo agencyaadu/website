@@ -70,12 +70,10 @@
         scrollbar-width: none;  //FIREFOX
         .post {
             margin-bottom: 5rem;
-            cursor: default;
             .link {
                 text-decoration: none;
                 .title {
-                    margin-bottom: 0.7rem;
-                    cursor: pointer;
+                    padding-bottom: 0.7rem;
                     h3 {
                         opacity: 0.5;
                         color: var(--blogpageHeading-goathoof-color);

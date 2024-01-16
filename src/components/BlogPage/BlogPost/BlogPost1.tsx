@@ -8,9 +8,13 @@ import { useInView } from 'react-intersection-observer';
 import BlogPostHeader from './Header/BlogPostHeader';
 import BlogPostFooter from './Footer/BlogPostFooter';
 import './Style/BlogPost.scss';
+import Cursor from '../../Cursor';
 
 
 const BlogPost1: React.FC = () => {
+
+    // =========== Title ===========
+    document.title = "Portfolio - agencyAadu";
 
     // =========== Media Query ===========
     const isMobile = useMediaQuery("(max-width:430px)");
@@ -101,6 +105,7 @@ const BlogPost1: React.FC = () => {
       return (
         <>
         <div className="BlogPost-wrapper">
+
             {/* ======= Nav Bar ========= */}
             <BlogPostHeader />
 
@@ -111,7 +116,7 @@ const BlogPost1: React.FC = () => {
                 animate={{ opacity: 1, y: 0, transition: { delay: 1, duration: 2 } }}
                 >
                 <div className="title">
-                    <h2>Portfolio</h2>
+                    <h1>Portfolio</h1>
                 </div>
                 {/* === From where the static page starts === */}
                 <div className="static-page">
@@ -156,6 +161,7 @@ const BlogPost1: React.FC = () => {
                 </div>
             </motion.div>
         
+        <Cursor />
         </div>
         </>
     )

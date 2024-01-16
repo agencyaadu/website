@@ -16,6 +16,10 @@ import { motion } from "framer-motion";
 import BlogPage from "../BlogPage";
 import { useMediaQuery } from "@uidotdev/usehooks";
 
+interface MousePosition {
+  x: number;
+  y: number;
+}
 
 const Hero: React.FC = () => {
 
@@ -23,6 +27,7 @@ const Hero: React.FC = () => {
   const [showLoader, setShowLoader] = useState(false);
   const isMobile = useMediaQuery("(max-width:430px)");
 
+  // REFRESH AFTER VIDEO COMPLETE
   useEffect(() => {
     if (isActive !== "About") {
       setShowLoader(false);
@@ -37,6 +42,61 @@ const Hero: React.FC = () => {
     };
   }, [isActive]);
 
+  // CURSOR
+  const [mousePosition, setMousePosition] = useState<MousePosition>({
+    x: 0,
+    y: 0
+  });
+  console.log(mousePosition)
+
+  useEffect(() => {
+    const mouseMove = (e: MouseEvent) => {
+      setMousePosition({
+        x: e.clientX,
+        y: e.clientY,
+      })
+    }
+
+    window.addEventListener("mousemove", mouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", mouseMove);
+    }
+  }, [])
+
+  const variants = {
+    default: {
+      x: mousePosition.x-8,
+      y: mousePosition.y-8,
+      opacity: 0.72,
+    },
+    change: {
+      width: '84px',
+      height: '84px',
+      x: mousePosition.x-42,
+      y: mousePosition.y-42,
+    },
+    changeforwork: {
+      width: '48px',
+      height: '48px',
+      x: mousePosition.x-24,
+      y: mousePosition.y-24,
+    },
+    changeforblog: {
+      width: '48px',
+      height: '48px',
+      x: mousePosition.x-24,
+      y: mousePosition.y-24,
+    }
+  }
+
+  const [cursorVariant, setCursorVariant] = useState("default");
+
+  const textEnter = () => setCursorVariant("change")
+  const textLeave = () => setCursorVariant("default")
+  const workTextEnter = () => setCursorVariant("changeforwork")
+  const blogTextEnter = () => setCursorVariant("changeforblog")
+  
   return (
     <div className="hero-wrapper">
       <motion.div
@@ -62,13 +122,19 @@ const Hero: React.FC = () => {
             onClick={() => setIsActive("Work")}
             className={`nav work-nav ${isActive === "Work" ? "active" : ""}`}
           >
-            <p>WORK</p>
+            <p
+              onMouseEnter={workTextEnter}
+              onMouseLeave={textLeave}
+            >WORK</p>
           </div>
           <div
             onClick={() => setIsActive("Blog")}
             className={`nav blog-nav ${isActive === "Blog" ? "active" : ""}`}
           >
-              <p>BLOG</p>
+              <p
+                onMouseEnter={blogTextEnter}
+                onMouseLeave={textLeave}
+              >BLOG</p>
           </div>
         </div>
       </motion.div>
@@ -78,6 +144,8 @@ const Hero: React.FC = () => {
           <a
             href="https://survey.qwary.com/form/S_wSzSPnasH9Wc_FT15X0J1BuEcPl5gIB0kGxc-dgSo="
             target="_blank"
+            onMouseEnter={textEnter}
+            onMouseLeave={textLeave}
           >
             <motion.div
               className="hero-box"
@@ -180,6 +248,8 @@ const Hero: React.FC = () => {
           <a
             href="https://survey.qwary.com/form/S_wSzSPnasH9Wc_FT15X0J1BuEcPl5gIB0kGxc-dgSo="
             target="_blank"
+            onMouseEnter={textEnter}
+            onMouseLeave={textLeave}
           >
             <div className="work-box">
               <div className="box1 mob-box">
@@ -251,6 +321,22 @@ const Hero: React.FC = () => {
           <BlogPage />
         </div>
       )}
+
+      <motion.div
+        className="cursor" 
+        variants = {variants}
+        animate = {cursorVariant}
+      >
+        {cursorVariant === "change" && (
+          <p className="cursor-text">Place<br/>Service Request</p>
+        )}
+        {cursorVariant === "changeforwork" && (
+          <p className="cursor-text" style={{fontSize: '0.6rem'}}>Work</p>
+        )}
+        {cursorVariant === "changeforblog" && (
+          <p className="cursor-text" style={{fontSize: '0.6rem'}}>Blog</p>
+        )}
+      </motion.div>
     </div>
   );
 };

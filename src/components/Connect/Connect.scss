@@ -47,6 +47,13 @@
         .icon {
           display: flex;
           gap: 13px;
+          a {
+            text-decoration: none;
+            size: 0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+          }
           img {
           }
         }

@@ -28,13 +28,25 @@ const Connect: React.FC = () => {
             <h5>6/196 , THOTIYANKADU 639136 IN</h5>
 
             <div className="icon">
-              <img src={One} alt="" className="iconsm" style={{ width: isSmolMobile ? "12px" : isMobile ? "15px" : "18px" }}/>
-              <img src={Two} alt="" className="iconsm" style={{ width: isSmolMobile ? "12px" : isMobile ? "15px" : "18px" }}/>
-              <img src={Three} alt="" className="iconsm" style={{ width: isSmolMobile ? "12px" : isMobile ? "15px" : "18px" }}/>
-              <img src={Four} alt="" className="iconsm" style={{ width: isSmolMobile ? "12px" : isMobile ? "15px" : "18px" }}/>
-              <img src={Five} alt="" className="iconsm" style={{ width: isSmolMobile ? "12px" : isMobile ? "15px" : "18px" }}/>
-              <img src={Six} alt="" className="iconsm" style={{ width: isSmolMobile ? "12px" : isMobile ? "15px" : "18px" }}/>
-              <img src={Seven} alt="" className="iconsm" style={{ width: isSmolMobile ? "12px" : isMobile ? "15px" : "18px" }}/>
+              <a href="https://discord.gg/mFdsehXr8x" target="_blank" rel="noreferrer">
+                <img src={One} alt="" className="iconsm" style={{ width: isSmolMobile ? "12px" : isMobile ? "15px" : "18px" }}/>
+              </a>
+              <a href="https://t.me/agencyAadu" target="_blank" rel="noreferrer">
+                <img src={Two} alt="" className="iconsm" style={{ width: isSmolMobile ? "12px" : isMobile ? "15px" : "18px" }}/>
+              </a>
+              <a href="https://www.behance.net/agencyaadu" target="_blank" rel="noreferrer">
+                <img src={Three} alt="" className="iconsm" style={{ width: isSmolMobile ? "12px" : isMobile ? "15px" : "18px" }}/>
+              </a>
+              <a href="https://dribbble.com/agencyaadu" target="_blank" rel="noreferrer">
+                <img src={Four} alt="" className="iconsm" style={{ width: isSmolMobile ? "12px" : isMobile ? "15px" : "18px" }}/>
+              </a>
+                <img src={Five} alt="" className="iconsm" style={{ width: isSmolMobile ? "12px" : isMobile ? "15px" : "18px" }}/>
+              <a href="https://www.deviantart.com/agencyaadu" target="_blank" rel="noreferrer">
+                <img src={Six} alt="" className="iconsm" style={{ width: isSmolMobile ? "12px" : isMobile ? "15px" : "18px" }}/>
+              </a>
+              <a href="https://www.artstation.com/agencyaadu" target="_blank" rel="noreferrer">
+                <img src={Seven} alt="" className="iconsm" style={{ width: isSmolMobile ? "12px" : isMobile ? "15px" : "18px" }}/>
+              </a>
             </div>
           </div>
           <div className="line"></div>

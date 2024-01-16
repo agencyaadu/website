@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Verify.scss';
+import Cursor from '../Cursor';
 
 const Verify: React.FC = () => {
   const [isPressed, setIsPressed] = useState(false);
@@ -48,6 +49,7 @@ const Verify: React.FC = () => {
             <div className="line"></div>
             </div>
         </div>
+        <Cursor />
     </div>
     </>
   )

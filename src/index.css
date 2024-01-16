@@ -34,9 +34,11 @@ html {
   box-sizing: border-box;
   font-family: "Walkway-Black";
   background: #fffbf6;
+  cursor: none;
 }
 
 section {
+  cursor: none;
   height: 100dvh;
   /* overflow: hidden; */
   scroll-snap-align: start;

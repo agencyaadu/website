@@ -436,3 +436,27 @@
     }
   }
 }
+.cursor {
+  background-color: #3c3c3c;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  pointer-events: none;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .cursor-text {
+      background: transparent;
+      text-align: center;
+      font-size: 0.7rem;
+      color: #fff;
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+  }
+}

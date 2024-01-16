@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import game from "../../assets/images/game.mp4";
@@ -6,7 +6,68 @@ import game from "../../assets/images/game.mp4";
 import "./work.scss";
 import Logo from "../Logo";
 
+interface MousePosition {
+  x: number;
+  y: number;
+}
+
 const Work: React.FC = () => {
+
+  const [mousePosition, setMousePosition] = useState<MousePosition>({
+    x: 0,
+    y: 0
+  });
+  console.log(mousePosition)
+
+  useEffect(() => {
+    const mouseMove = (e: MouseEvent) => {
+      setMousePosition({
+        x: e.clientX,
+        y: e.clientY,
+      })
+    }
+
+    window.addEventListener("mousemove", mouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", mouseMove);
+    }
+  }, [])
+
+  const variants = {
+    default: {
+      x: mousePosition.x-8,
+      y: mousePosition.y-8,
+      opacity: 0.72,
+    },
+    change: {
+      width: '84px',
+      height: '84px',
+      x: mousePosition.x-42,
+      y: mousePosition.y-42,
+    },
+    changeforwork: {
+      width: '48px',
+      height: '48px',
+      x: mousePosition.x-24,
+      y: mousePosition.y-24,
+    },
+    changeforblog: {
+      width: '48px',
+      height: '48px',
+      x: mousePosition.x-24,
+      y: mousePosition.y-24,
+    }
+  }
+
+  const [cursorVariant, setCursorVariant] = useState("default");
+
+  const textEnter = () => setCursorVariant("change")
+  const textLeave = () => setCursorVariant("default")
+  const workTextEnter = () => setCursorVariant("changeforwork")
+  const blogTextEnter = () => setCursorVariant("changeforblog")
+  
+
   return (
       <div className="work-wrapper">
         <motion.div
@@ -24,21 +85,33 @@ const Work: React.FC = () => {
           <div className="navbar-content">
             <div className='nav work-nav'>
               <Link to="/work" className="work-link">
-                <p>WORK</p>
+                <p
+                  onMouseEnter={workTextEnter}
+                  onMouseLeave={textLeave}
+                >WORK</p>
               </Link>
             </div>
             <div className='nav blog-nav'>
               <Link to="/blog">
-                <p>BLOG</p>
+                <p
+                  onMouseEnter={blogTextEnter}
+                  onMouseLeave={textLeave}
+                >BLOG</p>
               </Link>
             </div>
           </div>
         </motion.div>
         
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 2 } }} className="about-wrapper">
+        <motion.div
+          className="about-wrapper"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, transition: { duration: 2 } }} 
+          >
           <a
             href="https://survey.qwary.com/form/S_wSzSPnasH9Wc_FT15X0J1BuEcPl5gIB0kGxc-dgSo="
             target="_blank"
+            onMouseEnter={textEnter}
+            onMouseLeave={textLeave}
           >
             <div className="work-box">
               <div className="box1 mob-box">
@@ -102,6 +175,21 @@ const Work: React.FC = () => {
           <p className="request request1" style={{ textDecoration: "none" }}>
             CLICK ANYWHERE WITHIN THE BOX TO PLACE A SERVICE REQUEST.
           </p>
+        </motion.div>
+        <motion.div
+          className="cursor" 
+          variants = {variants}
+          animate = {cursorVariant}
+        >
+          {cursorVariant === "change" && (
+            <p className="cursor-text">Place<br/>Service Request</p>
+          )}
+          {cursorVariant === "changeforwork" && (
+            <p className="cursor-text" style={{fontSize: '0.6rem'}}>Work</p>
+          )}
+          {cursorVariant === "changeforblog" && (
+            <p className="cursor-text" style={{fontSize: '0.6rem'}}>Blog</p>
+          )}
         </motion.div>
     </div>
   );
