@@ -32,8 +32,8 @@ const Cursor: React.FC = () => {
     
       const variants = {
         default: {
-          x: mousePosition.x-8,
-          y: mousePosition.y-8,
+          x: mousePosition.x-7,
+          y: mousePosition.y-7,
           opacity: 0.72,
         },
       }
@@ -44,6 +44,7 @@ const Cursor: React.FC = () => {
             className="cursor" 
             variants = {variants}
             animate = 'default'
+            transition = {{ease: "backOut"}}
         >
         </motion.div>
         </>
