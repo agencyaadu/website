@@ -6,13 +6,15 @@
   height: 100dvh;
   overflow: hidden;
   .verify-container {
-    .aa-logo {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 120px 0 10px;
-      svg {
-          width: 72px;
+    .linktohome {
+      .aa-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 120px 0 10px;
+        svg {
+            width: 72px;
+        }
       }
     }
     .verify-content {

@@ -36,8 +36,8 @@ const Work: React.FC = () => {
 
   const variants = {
     default: {
-      x: mousePosition.x-8,
-      y: mousePosition.y-8,
+      x: mousePosition.x-7,
+      y: mousePosition.y-7,
       opacity: 0.72,
     },
     change: {
@@ -46,26 +46,12 @@ const Work: React.FC = () => {
       x: mousePosition.x-42,
       y: mousePosition.y-42,
     },
-    changeforwork: {
-      width: '48px',
-      height: '48px',
-      x: mousePosition.x-24,
-      y: mousePosition.y-24,
-    },
-    changeforblog: {
-      width: '48px',
-      height: '48px',
-      x: mousePosition.x-24,
-      y: mousePosition.y-24,
-    }
   }
 
   const [cursorVariant, setCursorVariant] = useState("default");
 
   const textEnter = () => setCursorVariant("change")
   const textLeave = () => setCursorVariant("default")
-  const workTextEnter = () => setCursorVariant("changeforwork")
-  const blogTextEnter = () => setCursorVariant("changeforblog")
   
 
   return (
@@ -85,18 +71,12 @@ const Work: React.FC = () => {
           <div className="navbar-content">
             <div className='nav work-nav'>
               <Link to="/work" className="work-link">
-                <p
-                  onMouseEnter={workTextEnter}
-                  onMouseLeave={textLeave}
-                >WORK</p>
+                <p>WORK</p>
               </Link>
             </div>
             <div className='nav blog-nav'>
               <Link to="/blog">
-                <p
-                  onMouseEnter={blogTextEnter}
-                  onMouseLeave={textLeave}
-                >BLOG</p>
+                <p>BLOG</p>
               </Link>
             </div>
           </div>
@@ -180,15 +160,10 @@ const Work: React.FC = () => {
           className="cursor" 
           variants = {variants}
           animate = {cursorVariant}
+          transition = {{ease: "backOut"}}
         >
           {cursorVariant === "change" && (
             <p className="cursor-text">Place<br/>Service Request</p>
-          )}
-          {cursorVariant === "changeforwork" && (
-            <p className="cursor-text" style={{fontSize: '0.6rem'}}>Work</p>
-          )}
-          {cursorVariant === "changeforblog" && (
-            <p className="cursor-text" style={{fontSize: '0.6rem'}}>Blog</p>
           )}
         </motion.div>
     </div>

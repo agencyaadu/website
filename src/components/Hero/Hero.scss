@@ -20,7 +20,7 @@
     background: transparent;
     border-radius: 50%;
     animation: rot 2s infinite;
-
+    
     @keyframes rot {
       100% {
         transform: rotate(360deg);
@@ -60,6 +60,7 @@
       display: none;
     }
     .nav {
+      transition: color 0.72s ease-in-out;
       &.active {
         p {
           color: black;
@@ -90,7 +91,7 @@
       background-size: 100% 100%;
       cursor: pointer;
       overflow: hidden;
-
+      
       .hero-box-bg {
         position: absolute;
         top: 0;
@@ -102,7 +103,7 @@
         background-position: top left;
         background-size: cover;
       }
-
+      
       .text {
         display: flex;
         flex-direction: column;
@@ -113,14 +114,14 @@
         top: 50%;
         transform: translateY(-50%);
         background: transparent;
-
+        
         .flex {
           display: flex;
           align-items: center;
           justify-content: flex-end;
           gap: 7px;
           background: transparent;
-
+          
           img {
             height: 30px;
             object-fit: contain;
@@ -128,76 +129,77 @@
             background: transparent;
           }
         }
-
+        
         .hand {
           width: 280px;
           animation: fadeIn 6s;
           background: transparent;
         }
         // @keyframes fadeIn {
-        //   0% {
-        //     opacity: 0;
-        //   }
-        //   25% {
-        //     opacity: 0;
-        //   }
-        //   100% {
-        //     opacity: 1;
-        //   }
-        // }
-        .way {
-          width: 180px;
-          animation: fadeOut 9s;
-          background: transparent;
-        }
-      }
-    }
-    .request {
-      padding-top: 10px;
-      text-align: center;
-      letter-spacing: 1.5px;
-      color: #c9c9c9;
-      font-family: "Walkway-Black";
-      font-size: 8px;
-      p {
-        text-decoration: none;
-      }
-    }
-    .loading-content {
-      position: absolute;
-      bottom: 50px;
-      right: 20px;
-    }
-  }
-
-  .work-box {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16/9;
-    border-radius: 4px;
-    border: 1px solid #5835214d;
-    align-items: center;
-    cursor: pointer;
-    overflow: hidden;
-    margin-top: 16px;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    .box1 {
-      height: 100%;
-      position: relative !important;
-      overflow: hidden;
-      .rotator {
-        position: absolute;
-        left: -3450px;
-        width: max-content;
-        transform-origin: center;
-        transform: rotate(-90deg);
-        // border: 1px solid rosybrown;
-        background: transparent;
-        display: flex;
-        flex-direction: column;
-        gap: 2px;
-        overflow: hidden;
+          //   0% {
+            //     opacity: 0;
+            //   }
+            //   25% {
+              //     opacity: 0;
+              //   }
+              //   100% {
+                //     opacity: 1;
+                //   }
+                // }
+                .way {
+                  width: 180px;
+                  animation: fadeOut 9s;
+                  background: transparent;
+                }
+              }
+            }
+            .request {
+              padding-top: 10px;
+              text-align: center;
+              letter-spacing: 1.5px;
+              color: #c9c9c9;
+              font-family: "Walkway-Black";
+              font-size: 8px;
+              p {
+                text-decoration: none;
+              }
+            }
+            .loading-content {
+              background: transparent;
+              position: absolute;
+              bottom: 50px;
+              right: 20px;
+            }
+          }
+          
+          .work-box {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16/9;
+            border-radius: 4px;
+            border: 1px solid #5835214d;
+            align-items: center;
+            cursor: pointer;
+            overflow: hidden;
+            margin-top: 16px;
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            .box1 {
+              height: 100%;
+              position: relative !important;
+              overflow: hidden;
+              .rotator {
+                position: absolute;
+                left: -3450px;
+                width: max-content;
+                transform-origin: center;
+                transform: rotate(-90deg);
+                // border: 1px solid rosybrown;
+                background: transparent;
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+                overflow: hidden;
         .services {
           background: transparent;
           margin-top: 12px;
@@ -307,24 +309,29 @@
         }
       }
     }
-    .loading-content {
-      display: none;
-    }
     .loader {
-      display: none;
+      bottom: 58px;
+      right: 18px;
+      width: 20px;
+      height: 20px;
+      border: 2.8px solid #7a7a7a;
     }
     .about-wrapper {
       height: 100%;
       .hero-box {
         height: 90%;
         .hero-box-bg {
-
+          
         }
       }
       .request {
         padding-top: 8px;
         letter-spacing: 1px;
         font-size: 7px;
+      }
+      .loading-content {
+        bottom: 58px;
+        right: 18px;
       }
     }
     .request {
@@ -412,6 +419,13 @@
         }
       }
     }
+    .loader {
+      bottom: 36px;
+      right: 12px;
+      width: 20px;
+      height: 20px;
+      border: 2.8px solid #7a7a7a;
+    }
     .about-wrapper {
       .hero-box {
         .hero-box-bg {
@@ -430,6 +444,10 @@
       .request {
         font-size: 6px;
       }
+      .loading-content {
+        bottom: 36px;
+        right: 12px;
+      }
     }
     .request {
       font-size: 6px;
@@ -439,8 +457,8 @@
 .cursor {
   background-color: #3c3c3c;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   position: fixed;
   top: 0;
