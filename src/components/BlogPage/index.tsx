@@ -10,6 +10,15 @@ import Post4 from "./BlogList/BlogList4";
 import Post5 from "./BlogList/BlogList5";
 import Post6 from "./BlogList/BlogList6";
 import Post7 from "./BlogList/BlogList7";
+import Post8 from "./BlogList/BlogList8";
+import Post9 from "./BlogList/BlogList9";
+import Post10 from "./BlogList/BlogList10";
+import Post11 from "./BlogList/BlogList11";
+import Post12 from "./BlogList/BlogList12";
+import Post16 from "./BlogList/BlogList16";
+import Post15 from "./BlogList/BlogList15";
+import Post14 from "./BlogList/BlogList14";
+import Post13 from "./BlogList/BlogList13";
 
 interface MousePosition {
   x: number;
@@ -92,6 +101,15 @@ const BlogPage: React.FC = () => {
         <Post1 />
         <Post2 />
         <Post3 />
+        <Post8 />
+        <Post9 />
+        <Post10 />
+        <Post11 />
+        <Post12 />
+        <Post13 />
+        <Post14 />
+        <Post15 />
+        <Post16 />
         <Post4 />
         <Post5 />
         <Post6 />

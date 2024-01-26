@@ -12,7 +12,15 @@ import BlogPost4 from "./components/BlogPage/BlogPost/BlogPost4";
 import BlogPost5 from "./components/BlogPage/BlogPost/BlogPost5";
 import BlogPost6 from "./components/BlogPage/BlogPost/BlogPost6";
 import BlogPost7 from "./components/BlogPage/BlogPost/BlogPost7";
-
+import BlogPost8 from "./components/BlogPage/BlogPost/BlogPost8";
+import BlogPost9 from "./components/BlogPage/BlogPost/BlogPost9";
+import BlogPost10 from "./components/BlogPage/BlogPost/BlogPost10";
+import BlogPost11 from "./components/BlogPage/BlogPost/BlogPost11";
+import BlogPost12 from "./components/BlogPage/BlogPost/BlogPost12";
+import BlogPost13 from "./components/BlogPage/BlogPost/BlogPost13";
+import BlogPost14 from "./components/BlogPage/BlogPost/BlogPost14";
+import BlogPost15 from "./components/BlogPage/BlogPost/BlogPost15";
+import BlogPost16 from "./components/BlogPage/BlogPost/BlogPost16";
 
 const App: React.FC = () => {
 
@@ -29,6 +37,15 @@ const App: React.FC = () => {
       <Route path="/blog/intern-of-agency-aadu" element={<BlogPost5 />} />
       <Route path="/blog/life-of-a-blogger" element={<BlogPost6 />} />
       <Route path="/blog/web-development" element={<BlogPost7 />} />
+      <Route path="/blog/cybersecurity-in-2024" element={<BlogPost8 />} />
+      <Route path="/blog/buttercup" element={<BlogPost9 />} />
+      <Route path="/blog/blockchain-beyond-bitcoin" element={<BlogPost10 />} />
+      <Route path="/blog/hidden-benefits-of-learning-a-new-language" element={<BlogPost11 />} />
+      <Route path="/blog/crafting-winning-social-media" element={<BlogPost12 />} />
+      <Route path="/blog/building-your-personal-brand" element={<BlogPost13 />} />
+      <Route path="/blog/conquering-your-fears" element={<BlogPost14 />} />
+      <Route path="/blog/apps-for-the-modern-entrepreneur" element={<BlogPost15 />} />
+      <Route path="/blog/the-future-of-work" element={<BlogPost16 />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

@@ -1,4 +1,4 @@
-// Blog Post - 6 "WEB DEVELOPMENT"
+// Blog Post - 7 "WEB DEVELOPMENT"
 
 import React, { useEffect, useState } from 'react';
 import { motion } from "framer-motion";
