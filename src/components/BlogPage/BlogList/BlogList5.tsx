@@ -20,13 +20,13 @@ export default function Post5() {
         >
            <Link to='/blog/intern-of-agency-aadu' onClick={scrollToTop} className="link">
                 <div className="title">
-                <h3>Intern of Agency Aadu</h3>
+                <h3>Example</h3>
                 </div>
             </Link>
-            <p className="summary">As a content developer at AADU, my days are filled with pouring over client briefs, brainstorming ideas, and using my incredible writing skills to craft engaging and effective content. And let me tell you, it’s not an easy job. Content writing requires a unique blend of creativity, research, and a touch of insanity. Okay, maybe more than just a touch, especially when it’s a Monday morning and you have a deadline looming over your head. But hey, that’s what caffeine is for, am I right?</p>
+            <p className="summary">Example</p>
             <div className="info">
-            <p className="author"><AiOutlineUser className="info-icon"/>  Prashant Rawat</p>
-            <p><LiaTagSolid className="info-icon"/>  Work</p>
+            <p className="author"><AiOutlineUser className="info-icon"/>  Example</p>
+            <p><LiaTagSolid className="info-icon"/>  Example</p>
             </div>
         </motion.div>
       </>

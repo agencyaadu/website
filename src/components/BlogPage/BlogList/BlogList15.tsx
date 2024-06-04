@@ -20,13 +20,13 @@ export default function Post15() {
         >
            <Link to='/blog/apps-for-the-modern-entrepreneur' onClick={scrollToTop} className="link">
                 <div className="title">
-                <h3>Apps for the Modern Entrepreneur</h3>
+                <h3>Example</h3>
                 </div>
             </Link>
-            <p className="summary">In the hustle and bustle of entrepreneurship, every minute counts. That's why having the right apps in your arsenal can be a game-changer, streamlining tasks, boosting productivity, and keeping you connected wherever you roam. So, ditch the scattered spreadsheets and overflowing inboxes, and check out these must-have apps for the modern entrepreneur.</p>
+            <p className="summary">Example</p>
             <div className="info">
-            <p className="author"><AiOutlineUser className="info-icon"/>  Prashant Rawat</p>
-            <p><LiaTagSolid className="info-icon"/>  Work</p>
+            <p className="author"><AiOutlineUser className="info-icon"/>  Example</p>
+            <p><LiaTagSolid className="info-icon"/>  Example</p>
             </div>
         </motion.div>
       </>

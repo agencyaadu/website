@@ -20,13 +20,13 @@ export default function Post6() {
         >
            <Link to='/blog/life-of-a-blogger' onClick={scrollToTop} className="link">
                 <div className="title">
-                <h3>Life of a 19 Year Old Blogger</h3>
+                <h3>Example</h3>
                 </div>
             </Link>
-            <p className="summary">As a blogger, I’m constantly trying to come up with new and interesting ideas to keep my readers entertained (aka stop them from clicking on that pesky “x” button). But let’s be real, the struggle is real. Sometimes I sit in front of my laptop for hours, trying to come up with a catchy title, only to end up with something like “10 Reasons Why Batman is the Best Superhero Ever” (which is actually true, fight me if you disagree). But my real inspiration behind starting this blog is my love for Batman. I mean, who wouldn’t be a fan of that brooding, billionaire, crime-fighting vigilante?</p>
+            <p className="summary">Example</p>
             <div className="info">
-            <p className="author"><AiOutlineUser className="info-icon"/>  Prashant Rawat</p>
-            <p><LiaTagSolid className="info-icon"/>  Blogging</p>
+            <p className="author"><AiOutlineUser className="info-icon"/>  Example</p>
+            <p><LiaTagSolid className="info-icon"/>  Example</p>
             </div>
         </motion.div>
       </>

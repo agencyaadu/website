@@ -20,13 +20,13 @@ export default function Post14() {
         >
            <Link to='/blog/conquering-your-fears' onClick={scrollToTop} className="link">
                 <div className="title">
-                <h3>Conquering Your Fears</h3>
+                <h3>Example</h3>
                 </div>
             </Link>
-            <p className="summary">Fear. It's the little voice in your head whispering "don't" when your heart screams "do." It's the icy hand gripping your ankle just as you peek over the edge of the cliff. It's the monster under the bed, the gremlin in the machine, the reason you haven't even considered...well, everything you secretly dream of. But here's the thing about fear: it's a paper tiger. Roaring loud, yes, but ultimately harmless unless you let it cage you. And guess what? You hold the key.</p>
+            <p className="summary">Example</p>
             <div className="info">
-            <p className="author"><AiOutlineUser className="info-icon"/>  Prashant Rawat</p>
-            <p><LiaTagSolid className="info-icon"/>  Work</p>
+            <p className="author"><AiOutlineUser className="info-icon"/>  Example</p>
+            <p><LiaTagSolid className="info-icon"/>  Example</p>
             </div>
         </motion.div>
       </>

@@ -110,7 +110,7 @@ const BlogPost8 = () => {
                 animate={{ opacity: 1, y: 0, transition: { delay: 1, duration: 2 } }}
             >
                 <div className="title">
-                    <h1>Cybersecurity in 2024</h1>
+                    <h1>Example</h1>
                 </div>
                 {/* === From where the static page starts === */}
                 <div className="static-page">
@@ -123,35 +123,16 @@ const BlogPost8 = () => {
                         <div className='content'>
                             <div className='paragraphs' style={{overflowY: isOverflowVisible ? 'auto' : 'hidden'}}>
                                 <div className="paragraph" topic-id="AI-pocalypse-or-AI-liance?" ref={ref0}>
-                                    &nbsp; &nbsp; &nbsp; &nbsp;
-                                    <strong>Buckle Up, Buttercup, It's Gonna Be a Bumpy Ride!</strong><br /><br />
-                                    
-                                    &nbsp; &nbsp; &nbsp; &nbsp;
-                                    Hold onto your hard drives, folks, because 2024 is shaping up to be a wild ride in the cybersecurity rodeo. Hackers are upping their game, slinging code like Wyatt Earp slinging lead, and our precious data is smack dab in the middle of the dusty saloon. But fear not, brave netizens! We've got the lowdown on the hottest cyber trends, and some nifty tips to keep your digital doors bolted shut.<br /><br />
+                                    Example
                                 </div>
                                 <div className="paragraph" topic-id="Quantum-Conundrum:-When-Encryption-Gets-Shaky" ref={ref}>
-                                    &nbsp; &nbsp; &nbsp; &nbsp;
-                                    Remember that Terminator movie where robots took over? Yeah, let's not let that happen. Artificial intelligence is making waves in the cybersecurity scene, but whether it's a trusty six-shooter or a Gatling gun in the wrong hands depends on who's using it. Hackers are employing AI to craft hyper-personalized phishing attacks, automate malware deployment, and even predict your next online move. But the good guys are using AI too, building intelligent defense systems that can sniff out threats faster than a bloodhound on a steak trail. It's a technological arms race, folks, and the future of our data hangs in the balance.Remember that Terminator movie where robots took over? Yeah, let's not let that happen. Artificial intelligence is making waves in the cybersecurity scene, but whether it's a trusty six-shooter or a Gatling gun in the wrong hands depends on who's using it. Hackers are employing AI to craft hyper-personalized phishing attacks, automate malware deployment, and even predict your next online move. But the good guys are using AI too, building intelligent defense systems that can sniff out threats faster than a bloodhound on a steak trail. It's a technological arms race, folks, and the future of our data hangs in the balance.<br />
+                                    
                                 </div>
                                 <div className="paragraph" topic-id="The-Metaverse:-Playground-or-Minefield?" ref={ref1}>
-                                    &nbsp; &nbsp; &nbsp; &nbsp;
-                                    Remember that feeling when you finally finished that super hard Sudoku puzzle? Imagine someone coming along and solving it in 0.2 seconds with a rusty spoon. That's kind of what quantum computers are doing to traditional encryption. These bad boys could crack the codes that keep our online lives safe, like a bank robber with a laser cutter. Don't panic just yet, though. Quantum tech is still in its infancy, and experts are scrambling to develop "quantum-proof" encryption methods. It's a race against the clock, folks, and the finish line is our digital privacy.<br />
+                                    
                                 </div>
                                 <div className="paragraph" topic-id="Conclusion" ref={ref2}>
-                                    &nbsp; &nbsp; &nbsp; &nbsp;
-                                    So, how do we stay safe in this digital dustbowl?<br /><br />
-
-                                    Fear not, intrepid web surfers! Here are some trusty steeds to help you navigate the cyber plains: <br /><br />
-                                    <ul>
-                                        <li>Patch it up, buttercup! Update your software regularly, from your phone to your fridge (yes, even your fridge!). Hackers love outdated systems like vultures love roadkill.</li>
-                                        <li>Password power-up! Ditch the "123456"s and embrace complex, unique passwords for every account. Think of them like personalized suits of armor for your digital self.</li>
-                                        <li>Phishing phantoms beware! Double-check email addresses, links, and sender info before clicking anything. If something smells fishy, it probably is.</li>
-                                        <li>Backup like a boss! Regularly back up your important data, like a squirrel stockpiling nuts for winter. You never know when a cyber-blizzard might hit.</li>
-                                        <li>Be a security savvy citizen! Stay informed about the latest cyber threats and educate others. Knowledge is power, and in the digital world, it's your kryptonite shield.</li>
-                                    </ul> <br /><br />
-                                    Remember, cybersecurity is a team effort. By being smart, vigilant, and a little bit paranoid, we can keep our data safe and sound in this ever-evolving digital landscape. So saddle up, partners, and let's ride this cyber rodeo together! And don't forget to wear your digital chaps – things are about to get buck wild.
-                                    <br />
-                                    Bonus Tip: Install a reputable antivirus and anti-malware software. It's like having a trusty cyber-sheriff guarding your digital town. <br />With a little caution and a lot of common sense, we can navigate the treacherous terrain of 2024 cybersecurity and emerge victorious, data intact and spirits high. Now go forth and conquer, brave netizens! Just remember, in the digital West, the only good hacker is a white hat hacker.
+                                    
                                 </div>
                             </div>
                         </div>

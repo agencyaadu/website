@@ -20,13 +20,13 @@ export default function Post11() {
         >
            <Link to='/blog/hidden-benefits-of-learning-a-new-language' onClick={scrollToTop} className="link">
                 <div className="title">
-                <h3>Hidden Benefits of Learning a New Language</h3>
+                <h3>Example</h3>
                 </div>
             </Link>
-            <p className="summary">Learning a new language is often seen as a way to communicate with more people and travel more easily. But there are many hidden benefits to learning a new language that go beyond the practical. In this blog post, we will explore some of these hidden benefits. When you learn a new language, you also learn about the culture of the people who speak that language. This can help you to develop a greater appreciation for different cultures and to see the world from a different perspective.</p>
+            <p className="summary">Example</p>
             <div className="info">
-            <p className="author"><AiOutlineUser className="info-icon"/>  Prashant Rawat</p>
-            <p><LiaTagSolid className="info-icon"/>  Skills</p>
+            <p className="author"><AiOutlineUser className="info-icon"/>  Example</p>
+            <p><LiaTagSolid className="info-icon"/>  Example</p>
             </div>
         </motion.div>
       </>

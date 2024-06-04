@@ -110,7 +110,7 @@ const BlogPost16 = () => {
                 animate={{ opacity: 1, y: 0, transition: { delay: 1, duration: 2 } }}
             >
                 <div className="title">
-                    <h1>The future of work</h1>
+                    <h1>Example</h1>
                 </div>
                 {/* === From where the static page starts === */}
                 <div className="static-page">
@@ -123,37 +123,16 @@ const BlogPost16 = () => {
                         <div className='content'>
                             <div className='paragraphs' style={{overflowY: isOverflowVisible ? 'auto' : 'hidden'}}>
                                 <div className="paragraph" topic-id="introduction" ref={ref0}>
-                                    <strong>The future of work: how technology is changing the game</strong><br /><br />
-                                    
-                                    &nbsp; &nbsp; &nbsp; &nbsp;
-                                    Buckle up, buttercup, because the future of work is a thrilling tech-powered rollercoaster! Robots, AI, and virtual reality are shaking the foundation of everything we thought we knew about jobs. But fear not, my fellow humans, because this revolution isn't here to steal your lunch money, it's here to transform your experience.<br /><br />
+                                    Example
                                 </div>
                                 <div className="paragraph" topic-id="imagine-this" ref={ref}>
-                                    <ul>
-                                        <li><strong>Robot co-workers:</strong>&nbsp;Forget Frankenstein's monster, think friendly R2-D2s zipping around, taking care of the mundane tasks, freeing you up for the brain-bending, creativity-exploding stuff.</li><br />
-                                        <li><strong>Virtual reality meetings:</strong>&nbsp;Ditch the stuffy conference rooms and teleport to a tropical beach for brainstorming sessions. Just don't forget to mute the parrot that keeps trying to steal your virtual stapler.</li><br />
-                                        <li><strong>Brain-computer interfaces:</strong>&nbsp;No more fumbling with keyboards! Think a thought, write an email. Boom! Productivity skyrockets (although, the potential for accidental office-wide telepathic singing is a bit concerning).</li><br />
-                                    </ul>
+                                    
                                 </div>
                                 <div className="paragraph" topic-id="but-wait-theres-more" ref={ref1}>
-                                    <ul>
-                                        <li><strong>AI-powered learning:</strong>&nbsp;Forget cramming for exams, just download knowledge directly into your brain (cue the Matrix music).</li><br />
-                                        <li><strong>Hyper-personalized workspaces:</strong>&nbsp;Your office adapts to your mood, temperature, and even your favorite Spotify playlist. Adios, Monday blues!</li><br />
-                                        <li><strong>Universal basic income:</strong>&nbsp;With robots doing most of the grunt work, who needs a traditional job? This could free up millions to pursue their passions, unleashing a wave of creativity and innovation.</li><br />
-                                    </ul>
+                                    
                                 </div>
                                 <div className="paragraph" topic-id="conclusion" ref={ref2}>
-                                    &nbsp; &nbsp; &nbsp; &nbsp;
-                                    Of course, it's not all sunshine and robot high-fives. There are challenges to overcome, like the widening skills gap and the ethical considerations of AI. But here's the good news: we have the brains, the tech, and the collective human spirit to navigate this brave new world.<br /><br />
-                                    So, embrace the change! Upskill, reskill, and get ready to ride the tech wave.** Here are some ways to prepare for the future of work: <br /><br />
-                                    <ul>
-                                        <li><strong>Focus on transferable skills:</strong>&nbsp;Learn to learn, be adaptable, and cultivate critical thinking and problem-solving abilities. These skills will be valuable in any job, no matter how much technology changes.</li><br />
-                                        <li><strong>Embrace lifelong learning:</strong>&nbsp;The days of one-and-done education are over. Stay curious, explore new fields, and keep your knowledge bank up-to-date.</li><br />
-                                        <li><strong>Get comfortable with technology:</strong>&nbsp;Don't be afraid of robots and AI. Learn how to use them to your advantage, and they can become your powerful allies in the workplace.</li><br />
-                                        <li><strong>Develop your network:</strong>&nbsp;Build relationships with people in your field, both online and offline. This network will be invaluable for finding new opportunities and staying ahead of the curve.</li><br />
-                                    </ul>
-                                    &nbsp; &nbsp; &nbsp; &nbsp;
-                                    Remember, the future of work is what we make it. So, let's make it a future where technology empowers us, not replaces us. Let's work together to create a world where everyone has the opportunity to thrive, with or without a stapler-stealing parrot in their virtual meeting.<br /><br />
+                                    
                                 </div>
                             </div>
                         </div>

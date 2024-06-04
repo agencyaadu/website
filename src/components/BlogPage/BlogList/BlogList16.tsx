@@ -20,13 +20,13 @@ export default function Post16() {
         >
            <Link to='/blog/the-future-of-work' onClick={scrollToTop} className="link">
                 <div className="title">
-                <h3>The future of work</h3>
+                <h3>Example</h3>
                 </div>
             </Link>
-            <p className="summary">Buttercup, because the future of work is a thrilling tech-powered rollercoaster! Robots, AI, and virtual reality are shaking the foundation of everything we thought we knew about jobs. But fear not, my fellow humans, because this revolution isn't here to steal your lunch money, it's here to transform your experience.</p>
+            <p className="summary">Example</p>
             <div className="info">
-            <p className="author"><AiOutlineUser className="info-icon"/>  Prashant Rawat</p>
-            <p><LiaTagSolid className="info-icon"/>  Technology</p>
+            <p className="author"><AiOutlineUser className="info-icon"/>  Example</p>
+            <p><LiaTagSolid className="info-icon"/>  Example</p>
             </div>
         </motion.div>
       </>

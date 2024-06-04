@@ -20,13 +20,13 @@ export default function Post7() {
         >
            <Link to='/blog/web-development' onClick={scrollToTop} className="link">
                 <div className="title">
-                <h3>Web Development</h3>
+                <h3>Example</h3>
                 </div>
             </Link>
-            <p className="summary">You see, web development is like a crazy ex-girlfriend. At first, everything seems all rainbows and unicorns. You're excited to learn and create some dope websites. But then, BAM! Just like your ex, it hits you with a million problems and errors that make you want to pull your hair out. And sometimes, you even question why you got into this mess in the first place.</p>
+            <p className="summary">Example</p>
             <div className="info">
-            <p className="author"><AiOutlineUser className="info-icon"/>  Prashant Rawat</p>
-            <p><LiaTagSolid className="info-icon"/>  Web Development</p>
+            <p className="author"><AiOutlineUser className="info-icon"/>  Example</p>
+            <p><LiaTagSolid className="info-icon"/>  Example</p>
             </div>
         </motion.div>
       </>
