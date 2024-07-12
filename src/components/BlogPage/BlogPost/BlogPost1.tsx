@@ -142,7 +142,7 @@ const BlogPost1: React.FC = () => {
                     <div className='scrolled-content' ref={mainRef}>
                         <div className='content'>
                             <div className='paragraphs' style={{overflowY: isOverflowVisible ? 'auto' : 'hidden'}}>
-                                <div className="paragraph" topic-id='Understanding the Importance of Crypto Project Rebranding' ref={ref0}>
+                                <div className="paragraph" topic-id='understanding-the-importance-of-crypto-project-rebranding' ref={ref0}>
                                 Cryptocurrency projects, like any business, sometimes need a fresh start. 
                                 Crypto project rebranding can be a strategic move to revitalize a project, 
                                 attract new investors, and reengage the community. The importance of rebranding
@@ -163,7 +163,7 @@ const BlogPost1: React.FC = () => {
                                 competitive. In a fast-evolving market, staying relevant is key, and rebranding c
                                 an be a tool to achieve that.
                                 </div>
-                                <div className="paragraph" topic-id="Key Steps to Effectively Rebrand Your Crypto Project" ref={ref}>
+                                <div className="paragraph" topic-id="key-steps-to-effectively-rebrand-your-crypto-project" ref={ref}>
                                 "Effective rebranding of a crypto project requires careful planning and execution. 
                                 The first step is to conduct thorough research and analysis. Understand the current 
                                 market landscape, identify the strengths and weaknesses of your project, and analyze 
@@ -183,7 +183,7 @@ const BlogPost1: React.FC = () => {
                                 social media announcements, and influencer partnerships to maximize reach and impact. 
                                 Monitor the response and be ready to address any concerns promptly."
                                 </div>
-                                <div className="paragraph" topic-id="The Role of ICO Rebranding in Attracting New Investments" ref={ref1}>
+                                <div className="paragraph" topic-id="the-role-of-ico-rebranding-in-attracting-new-investments" ref={ref1}>
                                 "Initial Coin Offerings (ICOs) are a common way for crypto projects to raise funds. However, if an ICO doesn’t achieve 
                                 the desired success, rebranding can be a way to reinvigorate interest and attract new investments. ICO rebranding 
                                 involves redefining the project’s goals, updating the whitepaper, and potentially altering the tokenomics. The aim is 
@@ -196,7 +196,7 @@ const BlogPost1: React.FC = () => {
                                 social media, crypto forums, and industry events to spread the word about the rebranded ICO. Collaborating with influencers and experts can further 
                                 validate the project and attract interest. The goal is to create a buzz and momentum that drives investment and support."
                                 </div>
-                                <div className="paragraph" topic-id="Case Studies: Successful Crypto Project Rebranding" ref={ref2} >
+                                <div className="paragraph" topic-id="case-studies-successful-crypto-project-rebranding" ref={ref2} >
                                 "Examining case studies of successful crypto project rebranding can provide valuable insights and inspiration. 
                                 One notable example is the rebranding of Antshares to NEO. The project’s rebranding involved not only a name change 
                                 but also a complete overhaul of its vision and technology. NEO positioned itself as a “smart economy” platform, emphasizing 
@@ -210,7 +210,7 @@ const BlogPost1: React.FC = () => {
                                 changes; it requires a strategic shift that aligns with the project’s long-term goals and market needs."
 
                                 </div>
-                                <div className="paragraph" topic-id="Common Pitfalls to Avoid During Project Rebranding" ref={ref3} >
+                                <div className="paragraph" topic-id="common-pitfalls-to-avoid-during-project-rebranding" ref={ref3} >
                                 "Rebranding a crypto project is a complex process, and several common pitfalls can derail the effort. 
                                 One major pitfall is lack of clear communication. If the reasons behind the rebranding and the benefits 
                                 it brings are not clearly communicated, stakeholders may become confused or lose trust. Transparency is 
@@ -226,7 +226,7 @@ const BlogPost1: React.FC = () => {
                                 to reach a broad audience and generate interest. Avoiding these pitfalls can pave the way for a successful and impactful rebranding."
 
                                 </div>
-                                <div className="paragraph" topic-id="Future Trends in Crypto Project Rebranding" ref={ref4} >
+                                <div className="paragraph" topic-id="future-trends-in-crypto-project-rebranding" ref={ref4} >
                                 "The future of crypto project rebranding is likely to be influenced by several emerging trends. 
                                 One significant trend is the increasing importance of sustainability and ethical considerations. 
                                 As investors and users become more conscious of environmental and social issues, projects that 
