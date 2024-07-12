@@ -72,6 +72,18 @@ const BlogPost1: React.FC = () => {
             delay: 100,
         }
     );
+    const [ref3, inView3] = useInView(
+        {
+            threshold: 1,
+            delay: 100,
+        }
+    );
+    const [ref4, inView4] = useInView(
+        {
+            threshold: 1,
+            delay: 100,
+        }
+    );
 
     // =========== Scroll to Topic ===========
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -95,10 +107,12 @@ const BlogPost1: React.FC = () => {
 
     // Topic Name
     const topicName = mainInView ? 
-        (inView2 ? 'Conclusion' :
-        inView1 ? 'Connecting With Audience' :
-        inView ? 'Visual Storytelling' :
-        inView0 ? 'Introduction' : '') : '';
+        (inView4 ? 'Future Trends in Crypto Project Rebranding' :
+        inView3 ? 'Common Pitfalls to Avoid During Project Rebranding' :
+        inView2 ? 'Case Studies: Successful Crypto Project Rebranding' :
+        inView1 ? 'The Role of ICO Rebranding in Attracting New Investments' :
+        inView ? 'Key Steps to Effectively Rebrand Your Crypto Project' :
+        inView0 ? 'Understanding the Importance of Crypto Project Rebranding' : '') : '';
 
 
 
@@ -196,7 +210,7 @@ const BlogPost1: React.FC = () => {
                                 changes; it requires a strategic shift that aligns with the project’s long-term goals and market needs."
 
                                 </div>
-                                <div className="paragraph" topic-id="Common Pitfalls to Avoid During Project Rebranding" ref={ref1} >
+                                <div className="paragraph" topic-id="Common Pitfalls to Avoid During Project Rebranding" ref={ref3} >
                                 "Rebranding a crypto project is a complex process, and several common pitfalls can derail the effort. 
                                 One major pitfall is lack of clear communication. If the reasons behind the rebranding and the benefits 
                                 it brings are not clearly communicated, stakeholders may become confused or lose trust. Transparency is 
@@ -212,7 +226,7 @@ const BlogPost1: React.FC = () => {
                                 to reach a broad audience and generate interest. Avoiding these pitfalls can pave the way for a successful and impactful rebranding."
 
                                 </div>
-                                <div className="paragraph" topic-id="Future Trends in Crypto Project Rebranding" ref={ref2} >
+                                <div className="paragraph" topic-id="Future Trends in Crypto Project Rebranding" ref={ref4} >
                                 "The future of crypto project rebranding is likely to be influenced by several emerging trends. 
                                 One significant trend is the increasing importance of sustainability and ethical considerations. 
                                 As investors and users become more conscious of environmental and social issues, projects that 
