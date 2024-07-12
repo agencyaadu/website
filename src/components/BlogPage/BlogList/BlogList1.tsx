@@ -20,10 +20,10 @@ export default function Post1() {
         >
            <Link to='/blog/portfolio' onClick={scrollToTop} className="link">
                 <div className="title">
-                <h3>Example</h3>
+                <h3>Transforming Your Cryptocurrency Initiative: Expanding Horizons for Enhanced Success</h3>
                 </div>
             </Link>
-            <p className="summary">Example</p>
+            <p className="summary">Cryptocurrency projects, like any business, sometimes need a fresh start. Crypto project rebranding can be a strategic move to revitalize a project, attract new investors, and reengage the community. The importance of rebranding lies in its ability to change public perception and redefine the project's goals and values.</p>
             <div className="info">
             <p className="author"><AiOutlineUser className="info-icon"/>  Example</p>
             <p><LiaTagSolid className="info-icon"/>  Example</p>
