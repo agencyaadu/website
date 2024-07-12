@@ -18,7 +18,7 @@ export default function Post2() {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0, transition: { delay: 1, duration: 2 } }}
         >
-            <Link to='/blog/meta-mayhem' onClick={scrollToTop} className="link">
+            <Link to='/blog/the-necessity-of-rebranding-in-crypto-amplifying-visibility-and-interaction-rebranding-crypto-project' onClick={scrollToTop} className="link">
                 <div className="title">
                 <h3>The Necessity of Rebranding in Crypto: Amplifying Visibility and Interaction</h3>
                 </div>

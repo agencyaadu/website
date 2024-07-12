@@ -18,7 +18,7 @@ export default function Post1() {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0, transition: { delay: 1, duration: 2 } }}
         >
-           <Link to='/blog/portfolio' onClick={scrollToTop} className="link">
+           <Link to='/blog/transforming-your-cryptocurrency-initiative-expanding-horizons-for-enhanced-success-rebranding-crypto-project' onClick={scrollToTop} className="link">
                 <div className="title">
                 <h3>Transforming Your Cryptocurrency Initiative: Expanding Horizons for Enhanced Success</h3>
                 </div>

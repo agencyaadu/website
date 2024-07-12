@@ -30,9 +30,9 @@ const App: React.FC = () => {
       <Route path="/work" element={<Portfolio />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/verification" element={<Verification />} />
-      <Route path="/blog/portfolio" element={<BlogPost1 />} />
-      <Route path="/blog/meta-mayhem" element={<BlogPost2 />} />
-      <Route path="/blog/navigating-the-cloud" element={<BlogPost3 />} />
+      <Route path="/blog/transforming-your-cryptocurrency-initiative-expanding-horizons-for-enhanced-success-rebranding-crypto-project" element={<BlogPost1 />} />
+      <Route path="/blog/the-necessity-of-rebranding-in-crypto-amplifying-visibility-and-interaction-rebranding-crypto-project" element={<BlogPost2 />} />
+      <Route path="/blog/revamping-crypto-ventures-elevate-market-impact-and-broaden-reach-rebranding-crypto-project" element={<BlogPost3 />} />
       <Route path="/blog/expectations-with-tech-in-2040" element={<BlogPost4 />} />
       <Route path="/blog/intern-of-agency-aadu" element={<BlogPost5 />} />
       <Route path="/blog/life-of-a-blogger" element={<BlogPost6 />} />
