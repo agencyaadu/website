@@ -16,7 +16,7 @@ const BlogPost2 = () => {
     // =========== Title ===========
     document.title = "The Necessity of Rebranding in Crypto";
 
-    const isMobile = useMediaQuery("(max-width:430px)");
+    const isMobile = useMediaQuery("(max-width:480px)");
 
     // // =========== List of Topics ========
     // const topics: Topic [] = [

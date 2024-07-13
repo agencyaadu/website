@@ -17,7 +17,7 @@ const BlogPost1: React.FC = () => {
     document.title = "Transforming Your Cryptocurrency Initiative";
 
     // =========== Media Query ===========
-    const isMobile = useMediaQuery("(max-width:430px)");
+    const isMobile = useMediaQuery("(max-width:480px)");
 
 
     // // =========== List of Topics ========

@@ -15,7 +15,7 @@ const BlogPost3 = () => {
 
     document.title = "Revamping Crypto Ventures"
 
-    const isMobile = useMediaQuery("(max-width:430px)");
+    const isMobile = useMediaQuery("(max-width:480px)");
 
     // // =========== List of Topics ========
     // const topics: Topic [] = [
