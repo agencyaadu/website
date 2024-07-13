@@ -119,7 +119,7 @@ const BlogPost3 = () => {
                 animate={{ opacity: 1, y: 0, transition: { delay: 1, duration: 2 } }}
             >
                 <div className="title">
-                    <h1>Revamping Crypto Ventures: Elevate Market Impact and Broaden Reach</h1>
+                    <h1>Revamping Crypto Ventures</h1>
                 </div>
                 {/* === From where the static page starts === */}
                 <div className="static-page">

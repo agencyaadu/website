@@ -20,7 +20,7 @@ export default function Post2() {
         >
             <Link to='/blog/the-necessity-of-rebranding-in-crypto-amplifying-visibility-and-interaction-rebranding-crypto-project' onClick={scrollToTop} className="link">
                 <div className="title">
-                <h3>The Necessity of Rebranding in Crypto: Amplifying Visibility and Interaction</h3>
+                <h3>The Necessity of Rebranding in Crypto</h3>
                 </div>
             </Link>
             <p className="summary">Rebranding in the crypto industry holds significant strategic value for several reasons. Firstly, it can rejuvenate a project's image, making it more appealing to new investors and users. Crypto project rebranding goes beyond a simple change of logo or name; it involves redefining the project’s mission, vision, and values.</p>

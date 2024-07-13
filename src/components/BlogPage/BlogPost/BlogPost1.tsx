@@ -130,7 +130,7 @@ const BlogPost1: React.FC = () => {
                 animate={{ opacity: 1, y: 0, transition: { delay: 1, duration: 2 } }}
                 >
                 <div className="title">
-                    <h1>Transforming Your Cryptocurrency Initiative: Expanding Horizons for Enhanced Success</h1>
+                    <h1>Transforming Your Cryptocurrency Initiative</h1>
                 </div>
                 {/* === From where the static page starts === */}
                 <div className="static-page">

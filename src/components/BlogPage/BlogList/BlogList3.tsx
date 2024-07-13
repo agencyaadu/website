@@ -20,7 +20,7 @@ export default function Post3() {
         >
             <Link to='/blog/revamping-crypto-ventures-elevate-market-impact-and-broaden-reach-rebranding-crypto-project' onClick={scrollToTop} className="link">
                 <div className="title">
-                <h3>Revamping Crypto Ventures: Elevate Market Impact and Broaden Reach</h3>
+                <h3>Revamping Crypto Ventures</h3>
                 </div>
             </Link>
             <p className="summary">In the dynamic world of cryptocurrencies, rebranding a crypto project is often a strategic necessity. The imperative to rebrand can stem from various factors such as the need to address past challenges, adapt to market changes, or redefine the project's goals and values.</p>

@@ -128,7 +128,7 @@ const BlogPost2 = () => {
                 animate={{ opacity: 1, y: 0, transition: { delay: 1, duration: 2 } }}
             >
                 <div className="title">
-                    <h1>The Necessity of Rebranding in Crypto: Amplifying Visibility and Interaction</h1>
+                    <h1>The Necessity of Rebranding in Crypto</h1>
                 </div>
                 {/* === From where the static page starts === */}
                 <div className="static-page">

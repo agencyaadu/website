@@ -20,7 +20,7 @@ export default function Post1() {
         >
            <Link to='/blog/transforming-your-cryptocurrency-initiative-expanding-horizons-for-enhanced-success-rebranding-crypto-project' onClick={scrollToTop} className="link">
                 <div className="title">
-                <h3>Transforming Your Cryptocurrency Initiative: Expanding Horizons for Enhanced Success</h3>
+                <h3>Transforming Your Cryptocurrency Initiative</h3>
                 </div>
             </Link>
             <p className="summary">Cryptocurrency projects, like any business, sometimes need a fresh start. Crypto project rebranding can be a strategic move to revitalize a project, attract new investors, and reengage the community. The importance of rebranding lies in its ability to change public perception and redefine the project's goals and values.</p>
