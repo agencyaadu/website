@@ -14,7 +14,7 @@ import Cursor from '../../Cursor';
 const BlogPost1: React.FC = () => {
 
     // =========== Title ===========
-    document.title = "Portfolio - agencyAadu";
+    document.title = "Transforming Your Cryptocurrency Initiative";
 
     // =========== Media Query ===========
     const isMobile = useMediaQuery("(max-width:430px)");
@@ -50,37 +50,37 @@ const BlogPost1: React.FC = () => {
     );
     const [ref0, inView0] = useInView(
         {
-            threshold: isMobile ? 0.7 : 1,
+            threshold: isMobile ? 0.5 : 0.6,
             delay: 100,
         }
     );
     const [ref, inView] = useInView(
         {
-            threshold: isMobile ? 0.9 : 0.9,
+            threshold: isMobile ? 0.5 : 0.6,
             delay: 100,
         }
     );
     const [ref1, inView1] = useInView(
         {
-            threshold: isMobile ? 0.9 : 1,
+            threshold: isMobile ? 0.5 : 0.6,
             delay: 100,
         }
     );
     const [ref2, inView2] = useInView(
         {
-            threshold: 1,
+            threshold: isMobile ? 0.5 : 0.6,
             delay: 100,
         }
     );
     const [ref3, inView3] = useInView(
         {
-            threshold: 1,
+            threshold: isMobile ? 0.5 : 0.6,
             delay: 100,
         }
     );
     const [ref4, inView4] = useInView(
         {
-            threshold: 1,
+            threshold: isMobile ? 0.5 : 0.6,
             delay: 100,
         }
     );

@@ -14,7 +14,7 @@ import Cursor from '../../Cursor';
 const BlogPost2 = () => {
 
     // =========== Title ===========
-    document.title = "Meta Mayhem - agencyAadu";
+    document.title = "The Necessity of Rebranding in Crypto";
 
     const isMobile = useMediaQuery("(max-width:430px)");
 
@@ -51,37 +51,37 @@ const BlogPost2 = () => {
     );
     const [ref0, inView0] = useInView(
         {
-            threshold: isMobile ? 0.5 : 1,
+            threshold: isMobile ? 0.5 : 0.6,
             delay: 100,
         }
     );
     const [ref, inView] = useInView(
         {
-            threshold: 1,
+            threshold: isMobile ? 0.5 : 0.6,
             delay: 100,
         }
     );
     const [ref1, inView1] = useInView(
         {
-            threshold: isMobile ? 0.3 : 0.4,
+            threshold: isMobile ? 0.5 : 0.6,
             delay: 100,
         }
     );
     const [ref2, inView2] = useInView(
         {
-            threshold: 0.6,
+            threshold: isMobile ? 0.5 : 0.6,
             delay: 100,
         }
     );
     const [ref3, inView3] = useInView(
         {
-            threshold: 0.6,
+            threshold: isMobile ? 0.5 : 0.6,
             delay: 100,
         }
     );
     const [ref4, inView4] = useInView(
         {
-            threshold: 0.6,
+            threshold: isMobile ? 0.5 : 0.6,
             delay: 100,
         }
     );

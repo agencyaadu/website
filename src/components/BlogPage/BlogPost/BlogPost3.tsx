@@ -13,7 +13,7 @@ import Cursor from '../../Cursor';
 
 const BlogPost3 = () => {
 
-    document.title = "Navigating the Cloud - agencyAadu"
+    document.title = "Revamping Crypto Ventures"
 
     const isMobile = useMediaQuery("(max-width:430px)");
 
@@ -42,7 +42,7 @@ const BlogPost3 = () => {
     );
     const [ref0, inView0] = useInView(
         {
-            threshold: 0.7,
+            threshold: isMobile ? 0.5 : 0.6,
             delay: 100,
         }
     );
