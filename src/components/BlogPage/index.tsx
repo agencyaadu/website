@@ -101,7 +101,7 @@ const BlogPage: React.FC = () => {
         <Post1 />
         <Post2 />
         <Post3 />
-        <Post8 />
+        {/* <Post8 />
         <Post9 />
         <Post10 />
         <Post11 />
@@ -113,7 +113,7 @@ const BlogPage: React.FC = () => {
         <Post4 />
         <Post5 />
         <Post6 />
-        <Post7 />
+        <Post7 /> */}
       </div>
       { isHomePage ? null : (<motion.div
         className="cursor" 
