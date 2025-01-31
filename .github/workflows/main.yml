@@ -33,13 +33,10 @@ jobs:
         with:
           name: build
           path: build
-      - name: Set up Firebase Authentication
-        run: |
-          echo '${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}' | jq . > $HOME/firebase.json
-          export "GOOGLE_APPLICATION_CREDENTIALS=$HOME/firebase.json" >> $GITHUB_ENV
       - name: Deploy to Firebase
-        uses: w9jds/firebase-action@master
+        uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          args: deploy --only hosting
-        env:
-          GOOGLE_APPLICATION_CREDENTIALS: $HOME/firebase.json
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
+          channelId: live
+          projectId: agencyaadu
